@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/round_corner"
+        android:padding="15dp">
+
+
+        <LinearLayout
+            android:id="@+id/lyt_subaddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:elevation="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtSubsAddressLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Subscription Address "
+                android:textStyle="bold"
+                android:textColor="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/txtSubAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtSubsAddressLabel"
+                android:text="Address"
+                android:textStyle="bold"
+                android:textColor="@color/ST_primary_blue"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerSubAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lyt_subaddress"
+            android:background="@color/white"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/lytPubAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="5dp"
+            android:layout_below="@+id/recyclerSubAddress"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/txtPubsAddressLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Publication Address "
+                android:textStyle="bold"
+                android:textColor="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/txtPubAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtPubsAddressLabel"
+                android:text="Address"
+                android:textStyle="bold"
+                android:textColor="@color/ST_primary_blue"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerPubAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lytPubAddress"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/butOk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/ST_primary_blue"
+            android:layout_below="@+id/lyt"
+            android:text="OK"
+            android:textColor="#FFF" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+

@@ -1,0 +1,283 @@
+{
+  "$schema": "mesh.jsonschema",
+  "IVindex": 0,
+  "IVupdate": 0,
+  "appKeys": [
+    {
+      "boundNetKey": 0,
+      "index": 0,
+      "key": "[B@a0f0b89",
+      "name": "Home Network",
+      "oldKey": "[B@a0f0b89"
+    }
+  ],
+  "groups": [
+    {
+      "address": "c000",
+      "isChecked": false,
+      "name": "Lights",
+      "nodes": [
+        {
+          "address": "CD:D9:9D:4F:EB:E5",
+          "blacklisted": false,
+          "configComplete": false,
+          "configured": "true",
+          "elements": [
+            {
+              "index": 0,
+              "isChecked": false,
+              "isPublished": false,
+              "isSubscribed": false,
+              "models": [
+                {
+                  "isChecked": true,
+                  "modelId": "0000",
+                  "publish": {
+                    "address": "c000",
+                    "isChecked": false
+                  },
+                  "subscribe": [
+                    "c000"
+                  ]
+                }
+              ],
+              "unicastAddress": "0002"
+            }
+          ],
+          "group": "false",
+          "in_range": "true",
+          "isChecked": false,
+          "m_address": "0002",
+          "name": "Device 01",
+          "numberOfElements": 1,
+          "publishAddress": 0,
+          "publish_address": "null",
+          "subgroup": "false",
+          "subtitle": "",
+          "title": "Device 01",
+          "type": "0"
+        },
+        {
+          "address": "DA:E7:BA:8F:C0:03",
+          "blacklisted": false,
+          "configComplete": false,
+          "configured": "true",
+          "elements": [
+            {
+              "index": 0,
+              "isChecked": false,
+              "isPublished": false,
+              "isSubscribed": false,
+              "models": [
+                {
+                  "isChecked": true,
+                  "modelId": "0000",
+                  "publish": {
+                    "address": "c000",
+                    "isChecked": false
+                  },
+                  "subscribe": [
+                    "c000"
+                  ]
+                }
+              ],
+              "unicastAddress": "0003"
+            }
+          ],
+          "group": "false",
+          "in_range": "true",
+          "isChecked": false,
+          "m_address": "0003",
+          "name": "Device 02",
+          "numberOfElements": 1,
+          "publishAddress": 0,
+          "publish_address": "null",
+          "subgroup": "false",
+          "subtitle": "",
+          "title": "Device 02",
+          "type": "0"
+        }
+      ]
+    },
+    {
+      "address": "c004",
+      "isChecked": false,
+      "name": "Group 0",
+      "nodes": [
+        {
+          "address": "CD:D9:9D:4F:EB:E5",
+          "blacklisted": false,
+          "configComplete": false,
+          "configured": "true",
+          "elements": [
+            {
+              "index": 0,
+              "isChecked": false,
+              "isPublished": false,
+              "isSubscribed": false,
+              "models": [
+                {
+                  "isChecked": true,
+                  "modelId": "0000",
+                  "publish": {
+                    "address": "c000",
+                    "isChecked": false
+                  },
+                  "subscribe": [
+                    "c000"
+                  ]
+                }
+              ],
+              "unicastAddress": "0002"
+            }
+          ],
+          "group": "false",
+          "in_range": "true",
+          "isChecked": false,
+          "m_address": "0002",
+          "name": "Device 01",
+          "numberOfElements": 1,
+          "publishAddress": 0,
+          "publish_address": "null",
+          "subgroup": "false",
+          "subtitle": "",
+          "title": "Device 01",
+          "type": "0"
+        },
+        {
+          "address": "DA:E7:BA:8F:C0:03",
+          "blacklisted": false,
+          "configComplete": false,
+          "configured": "true",
+          "elements": [
+            {
+              "index": 0,
+              "isChecked": false,
+              "isPublished": false,
+              "isSubscribed": false,
+              "models": [
+                {
+                  "isChecked": true,
+                  "modelId": "0000",
+                  "publish": {
+                    "address": "c000",
+                    "isChecked": false
+                  },
+                  "subscribe": [
+                    "c000"
+                  ]
+                }
+              ],
+              "unicastAddress": "0003"
+            }
+          ],
+          "group": "false",
+          "in_range": "true",
+          "isChecked": false,
+          "m_address": "0003",
+          "name": "Device 02",
+          "numberOfElements": 1,
+          "publishAddress": 0,
+          "publish_address": "null",
+          "subgroup": "false",
+          "subtitle": "",
+          "title": "Device 02",
+          "type": "0"
+        }
+      ]
+    }
+  ],
+  "meshName": "Light House",
+  "meshUUID": "72C6BE40444D2081BEAADDAD4E3CC21C",
+  "netKeys": [
+    {
+      "index": 0,
+      "key": "[B@2e1d78e",
+      "minSecurity": "high",
+      "name": "Home Network",
+      "phase": 0
+    }
+  ],
+  "nodes": [
+    {
+      "address": "CD:D9:9D:4F:EB:E5",
+      "blacklisted": false,
+      "configComplete": false,
+      "configured": "true",
+      "elements": [
+        {
+          "index": 0,
+          "isChecked": false,
+          "isPublished": false,
+          "isSubscribed": false,
+          "models": [
+            {
+              "isChecked": true,
+              "modelId": "0000",
+              "publish": {
+                "address": "c000",
+                "isChecked": false
+              },
+              "subscribe": [
+                "c000"
+              ]
+            }
+          ],
+          "unicastAddress": "0002"
+        }
+      ],
+      "group": "false",
+      "in_range": "true",
+      "isChecked": false,
+      "m_address": "0002",
+      "name": "Device 01",
+      "numberOfElements": 1,
+      "publishAddress": 0,
+      "publish_address": "null",
+      "subgroup": "false",
+      "subtitle": "",
+      "title": "Device 01",
+      "type": "0"
+    },
+    {
+      "address": "DA:E7:BA:8F:C0:03",
+      "blacklisted": false,
+      "configComplete": false,
+      "configured": "true",
+      "elements": [
+        {
+          "index": 0,
+          "isChecked": false,
+          "isPublished": false,
+          "isSubscribed": false,
+          "models": [
+            {
+              "isChecked": true,
+              "modelId": "0000",
+              "publish": {
+                "address": "c000",
+                "isChecked": false
+              },
+              "subscribe": [
+                "c000"
+              ]
+            }
+          ],
+          "unicastAddress": "0003"
+        }
+      ],
+      "group": "false",
+      "in_range": "true",
+      "isChecked": false,
+      "m_address": "0003",
+      "name": "Device 02",
+      "numberOfElements": 1,
+      "publishAddress": 0,
+      "publish_address": "null",
+      "subgroup": "false",
+      "subtitle": "",
+      "title": "Device 02",
+      "type": "0"
+    }
+  ]
+}

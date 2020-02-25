@@ -1,0 +1,1209 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		048130D921638EAD00FBEFBC /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048130D821638EAD00FBEFBC /* LogViewController.swift */; };
+		25339802216B685300483D21 /* SensorModelPropertyIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25339801216B685300483D21 /* SensorModelPropertyIdentifier.swift */; };
+		254C6B4120CA4E780079F271 /* GenericModelNodeListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254C6B3E20CA4E780079F271 /* GenericModelNodeListController.swift */; };
+		254C6B4220CA4E780079F271 /* ModelListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254C6B3F20CA4E780079F271 /* ModelListViewController.swift */; };
+		254C6B4320CA4E780079F271 /* VendorModelNodeListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254C6B4020CA4E780079F271 /* VendorModelNodeListController.swift */; };
+		254C6B4720CA4FA00079F271 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254C6B4520CA4FA00079F271 /* MenuViewController.swift */; };
+		254C6B4820CA4FA00079F271 /* MenuViewIntializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254C6B4620CA4FA00079F271 /* MenuViewIntializer.swift */; };
+		254F3EA821510CE10078B0A1 /* CompanyIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254F3EA621510CE10078B0A1 /* CompanyIdentifiers.swift */; };
+		25698F2D20DA386200E47A82 /* SignUpPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25698F2B20DA386200E47A82 /* SignUpPageViewController.swift */; };
+		25698F2E20DA386200E47A82 /* LoginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25698F2C20DA386200E47A82 /* LoginPageViewController.swift */; };
+		2593155820E1FB9E0038A4C5 /* RecoverPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2593155720E1FB9E0038A4C5 /* RecoverPasswordViewController.swift */; };
+		2593155E20E1FDA30038A4C5 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2593155D20E1FDA30038A4C5 /* ChangePasswordViewController.swift */; };
+		25B0229521677D9E00968368 /* SensorModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B0229421677D9E00968368 /* SensorModelViewController.swift */; };
+		25CC552F20CF94D8006BAADE /* JoinAndRegisterNetworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CC552E20CF94D8006BAADE /* JoinAndRegisterNetworkViewController.swift */; };
+		25CC553220CF958A006BAADE /* JoinedNetworkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CC553120CF958A006BAADE /* JoinedNetworkTableViewCell.swift */; };
+		25CC553520D121C5006BAADE /* ApplicationSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CC553420D121C5006BAADE /* ApplicationSettingViewController.swift */; };
+		25CC553820D234CA006BAADE /* LoginSignUpManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CC553720D234CA006BAADE /* LoginSignUpManager.swift */; };
+		25EA33F420C7E7B10058842C /* SyncInviteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EA33F320C7E7B10058842C /* SyncInviteViewController.swift */; };
+		25EA33F620C81B120058842C /* CloudOperationsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EA33F520C81B120058842C /* CloudOperationsHandler.swift */; };
+		25F6CC4220EF73B200283FAA /* viewActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F6CC4120EF73B200283FAA /* viewActivityIndicator.swift */; };
+		45853B49219EDEFB00432F86 /* libBlueNRG-Mesh.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 45853B48219EDEFB00432F86 /* libBlueNRG-Mesh.a */; };
+		45853B4D219EE50800432F86 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45853B4B219EE50800432F86 /* Fabric.framework */; };
+		45853B4E219EE50800432F86 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45853B4C219EE50800432F86 /* Crashlytics.framework */; };
+		F31D6FD42108556400C623A4 /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31D6FC02108556400C623A4 /* AFError.swift */; };
+		F31D6FD52108556400C623A4 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31D6FC22108556400C623A4 /* Alamofire.swift */; };
+		F31D6FD62108556400C623A4 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31D6FC32108556400C623A4 /* DispatchQueue+Alamofire.swift */; };
+		F31D6FD92108556400C623A4 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31D6FC62108556400C623A4 /* MultipartFormData.swift */; };
+		F31D6FDA2108556400C623A4 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31D6FC72108556400C623A4 /* NetworkReachabilityManager.swift */; };
+		F31D6FDB2108556400C623A4 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31D6FC82108556400C623A4 /* Notifications.swift */; };
+		F31D6FDC2108556400C623A4 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31D6FC92108556400C623A4 /* ParameterEncoding.swift */; };
+		F31D6FDD2108556400C623A4 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31D6FCA2108556400C623A4 /* Request.swift */; };
+		F31D6FDE2108556400C623A4 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31D6FCB2108556400C623A4 /* Response.swift */; };
+		F31D6FDF2108556400C623A4 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31D6FCC2108556400C623A4 /* ResponseSerialization.swift */; };
+		F31D6FE02108556400C623A4 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31D6FCD2108556400C623A4 /* Result.swift */; };
+		F31D6FE12108556400C623A4 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31D6FCE2108556400C623A4 /* ServerTrustPolicy.swift */; };
+		F31D6FE22108556400C623A4 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31D6FCF2108556400C623A4 /* SessionDelegate.swift */; };
+		F31D6FE32108556400C623A4 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31D6FD02108556400C623A4 /* SessionManager.swift */; };
+		F31D6FE42108556400C623A4 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31D6FD12108556400C623A4 /* TaskDelegate.swift */; };
+		F31D6FE52108556400C623A4 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31D6FD22108556400C623A4 /* Timeline.swift */; };
+		F31D6FE62108556400C623A4 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31D6FD32108556400C623A4 /* Validation.swift */; };
+		F31D6FE821085FC700C623A4 /* HelpGuide.pdf in Resources */ = {isa = PBXBuildFile; fileRef = F31D6FE721085FC600C623A4 /* HelpGuide.pdf */; };
+		F321FD7620C50805004C48A0 /* Models.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F321FD7520C50805004C48A0 /* Models.storyboard */; };
+		F322FFE220E60B080055B5DA /* LightingCTLPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F322FFE120E60B080055B5DA /* LightingCTLPopupViewController.swift */; };
+		F327B75B21623B4900958714 /* STLogReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = F327B75A21623B4900958714 /* STLogReceiver.swift */; };
+		F327B7602164B8BC00958714 /* LogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F327B75F2164B8BC00958714 /* LogTableViewCell.swift */; };
+		F3389607216C6943005394B1 /* NodeFeatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3389606216C6943005394B1 /* NodeFeatureViewController.swift */; };
+		F338960A216C77FB005394B1 /* NodeInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3389609216C77FB005394B1 /* NodeInformationViewController.swift */; };
+		F338A34420E20FCA00005DE0 /* LightingModelNodeListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F338A34320E20FCA00005DE0 /* LightingModelNodeListController.swift */; };
+		F34AA16A216F0D6000798AAB /* NetworkDefaultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34AA169216F0D6000798AAB /* NetworkDefaultsViewController.swift */; };
+		F34AA16D216F0DBF00798AAB /* PublishDefaultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34AA16C216F0DBF00798AAB /* PublishDefaultsViewController.swift */; };
+		F34AA16F216F0DF900798AAB /* SubscribeDefaultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34AA16E216F0DF900798AAB /* SubscribeDefaultsViewController.swift */; };
+		F357A76B2088A8CA000D88F9 /* DummyLink.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F357A7682088A8CA000D88F9 /* DummyLink.cpp */; };
+		F363A15B20BE5E8D00E133A0 /* CloudSync.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F363A15A20BE5E8D00E133A0 /* CloudSync.storyboard */; };
+		F377F9BF20C7ABAA008AD4EA /* SwiftProgressLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F377F9BE20C7ABAA008AD4EA /* SwiftProgressLoader.swift */; };
+		F37A310220BD729F00D86DD7 /* UserHelperScreenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37A310020BD729E00D86DD7 /* UserHelperScreenManager.swift */; };
+		F37A310420BD735000D86DD7 /* ProvisionerAdditionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37A310320BD735000D86DD7 /* ProvisionerAdditionController.swift */; };
+		F37A311320BD756300D86DD7 /* CloudOperationConstantFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37A310720BD756300D86DD7 /* CloudOperationConstantFile.swift */; };
+		F37A311420BD756300D86DD7 /* CloudWebRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37A310920BD756300D86DD7 /* CloudWebRequestHandler.swift */; };
+		F387E3F4212FC1060020B2D1 /* STMeshTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F387E3F3212FC1060020B2D1 /* STMeshTabBarController.swift */; };
+		F387E3F6212FC1430020B2D1 /* CommonModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F387E3F5212FC1430020B2D1 /* CommonModels.swift */; };
+		F387E3FA212FC1910020B2D1 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = F387E3F9212FC1910020B2D1 /* SwiftyJSON.swift */; };
+		F387E401212FC2310020B2D1 /* commonAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F387E3FD212FC2310020B2D1 /* commonAlertView.swift */; };
+		F387E402212FC2310020B2D1 /* GUIAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F387E3FE212FC2310020B2D1 /* GUIAlertView.xib */; };
+		F387E408212FCA110020B2D1 /* MeshDeviceListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F387E406212FCA110020B2D1 /* MeshDeviceListCollectionViewCell.swift */; };
+		F387E409212FCA110020B2D1 /* provisionedNodeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F387E407212FCA110020B2D1 /* provisionedNodeCollectionViewCell.swift */; };
+		F387E40D212FCB400020B2D1 /* SignOutOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F387E40C212FCB400020B2D1 /* SignOutOperation.swift */; };
+		F38EA44B2089C63F00A998D6 /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F38EA3F32089C63E00A998D6 /* About.storyboard */; };
+		F38EA44C2089C63F00A998D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F38EA3F42089C63E00A998D6 /* LaunchScreen.storyboard */; };
+		F38EA44D2089C63F00A998D6 /* Groups.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F38EA3F62089C63E00A998D6 /* Groups.storyboard */; };
+		F38EA44E2089C63F00A998D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F38EA3F72089C63E00A998D6 /* Main.storyboard */; };
+		F38EA44F2089C63F00A998D6 /* ConfigurationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38EA3F92089C63E00A998D6 /* ConfigurationTableViewCell.swift */; };
+		F38EA4502089C63F00A998D6 /* GroupMembersHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38EA3FA2089C63E00A998D6 /* GroupMembersHeaderTableViewCell.swift */; };
+		F38EA4512089C63F00A998D6 /* GroupMembersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38EA3FB2089C63E00A998D6 /* GroupMembersTableViewCell.swift */; };
+		F38EA4522089C63F00A998D6 /* GroupsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38EA3FC2089C63E00A998D6 /* GroupsCollectionViewCell.swift */; };
+		F38EA4532089C63F00A998D6 /* GroupSettingsPopupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38EA3FD2089C63E00A998D6 /* GroupSettingsPopupTableViewCell.swift */; };
+		F38EA4542089C63F00A998D6 /* NodeElementTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38EA3FE2089C63E00A998D6 /* NodeElementTableViewCell.swift */; };
+		F38EA4552089C63F00A998D6 /* ProvisionedElementsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38EA3FF2089C63E00A998D6 /* ProvisionedElementsTableViewCell.swift */; };
+		F38EA4562089C63F00A998D6 /* PublishPopUpTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38EA4002089C63E00A998D6 /* PublishPopUpTableViewCell.swift */; };
+		F38EA4572089C63F00A998D6 /* SettingsGroupsPopupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38EA4012089C63E00A998D6 /* SettingsGroupsPopupTableViewCell.swift */; };
+		F38EA4582089C63F00A998D6 /* settingsNodeGroupsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38EA4022089C63E00A998D6 /* settingsNodeGroupsTableViewCell.swift */; };
+		F38EA4742089C63F00A998D6 /* import_ExportConfigController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38EA4352089C63F00A998D6 /* import_ExportConfigController.swift */; };
+		F38EA4752089C63F00A998D6 /* AddConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38EA4372089C63F00A998D6 /* AddConfigurationViewController.swift */; };
+		F38EA4772089C63F00A998D6 /* MeshDeviceListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38EA4392089C63F00A998D6 /* MeshDeviceListViewController.swift */; };
+		F38EA4782089C63F00A998D6 /* NodesElementListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38EA43A2089C63F00A998D6 /* NodesElementListViewController.swift */; };
+		F38EA4792089C63F00A998D6 /* ProvisioningPopUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38EA43B2089C63F00A998D6 /* ProvisioningPopUpController.swift */; };
+		F38EA4812089C63F00A998D6 /* ConfigModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38EA4452089C63F00A998D6 /* ConfigModelManager.swift */; };
+		F38EA4822089C63F00A998D6 /* ProvisioningManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38EA4462089C63F00A998D6 /* ProvisioningManager.swift */; };
+		F38EA4832089C63F00A998D6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38EA4482089C63F00A998D6 /* Extensions.swift */; };
+		F38EA49D2089C71300A998D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38EA4852089C71200A998D6 /* AppDelegate.swift */; };
+		F38EA49E2089C71300A998D6 /* CommonTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38EA4882089C71200A998D6 /* CommonTypes.swift */; };
+		F38EA49F2089C71300A998D6 /* CommonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38EA4892089C71200A998D6 /* CommonUtils.swift */; };
+		F38EA4A02089C71300A998D6 /* FabricsCustomEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38EA48B2089C71200A998D6 /* FabricsCustomEvents.swift */; };
+		F38EA4A12089C71300A998D6 /* NetworkConfigDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38EA48C2089C71200A998D6 /* NetworkConfigDataManager.swift */; };
+		F38EA4A22089C71300A998D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F38EA48E2089C71200A998D6 /* Assets.xcassets */; };
+		F38EA4A52089C71300A998D6 /* jsonFile.json in Resources */ = {isa = PBXBuildFile; fileRef = F38EA4912089C71200A998D6 /* jsonFile.json */; };
+		F38EA4A62089C71300A998D6 /* LicenseAgreement.pdf in Resources */ = {isa = PBXBuildFile; fileRef = F38EA4922089C71200A998D6 /* LicenseAgreement.pdf */; };
+		F38EA4AE2089C71300A998D6 /* UserHelperScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38EA49C2089C71200A998D6 /* UserHelperScreen.swift */; };
+		F38EA4B72089E0CD00A998D6 /* ElementSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38EA4B02089E0CD00A998D6 /* ElementSettingViewController.swift */; };
+		F38EA4B82089E0CD00A998D6 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38EA4B12089E0CD00A998D6 /* InfoViewController.swift */; };
+		F38EA4B92089E0CD00A998D6 /* MeshNodeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38EA4B22089E0CD00A998D6 /* MeshNodeListViewController.swift */; };
+		F38EA4BA2089E0CD00A998D6 /* NodeSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38EA4B32089E0CD00A998D6 /* NodeSettingViewController.swift */; };
+		F38EA4BB2089E0CD00A998D6 /* PublishPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38EA4B42089E0CD00A998D6 /* PublishPopUpViewController.swift */; };
+		F38EA4BC2089E0CD00A998D6 /* RemovePopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38EA4B52089E0CD00A998D6 /* RemovePopupViewController.swift */; };
+		F38EA4BD2089E0CD00A998D6 /* SettingsGroupsPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38EA4B62089E0CD00A998D6 /* SettingsGroupsPopupViewController.swift */; };
+		F38EA4C82089E13F00A998D6 /* AddGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38EA4BF2089E13F00A998D6 /* AddGroupViewController.swift */; };
+		F38EA4C92089E13F00A998D6 /* GroupsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38EA4C02089E13F00A998D6 /* GroupsCollectionViewController.swift */; };
+		F38EA4CA2089E13F00A998D6 /* GroupSettingsPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38EA4C12089E13F00A998D6 /* GroupSettingsPopupViewController.swift */; };
+		F38EA4CB2089E13F00A998D6 /* GroupSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38EA4C22089E13F00A998D6 /* GroupSettingsViewController.swift */; };
+		F38EA4CC2089E13F00A998D6 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38EA4C42089E13F00A998D6 /* AboutViewController.swift */; };
+		F38EA4CE2089E13F00A998D6 /* ComponentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38EA4C62089E13F00A998D6 /* ComponentsViewController.swift */; };
+		F38EA4CF2089E13F00A998D6 /* LicenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38EA4C72089E13F00A998D6 /* LicenseViewController.swift */; };
+		F395E8802137B9900023F1B7 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F395E87E2137B98F0023F1B7 /* Color+Extensions.swift */; };
+		F395E883213956280023F1B7 /* STCustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F395E882213956280023F1B7 /* STCustomTextField.swift */; };
+		F3A0A06520BEC39400086A38 /* STMeshBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A0A06420BEC39400086A38 /* STMeshBaseViewController.swift */; };
+		F3A88FB9208D9CD400E7AA93 /* LEDControlManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A88FB8208D9CD400E7AA93 /* LEDControlManager.swift */; };
+		F3D4B6C2214B8E6A00324554 /* LightingHSLPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D4B6C0214B8E6A00324554 /* LightingHSLPopupViewController.swift */; };
+		F3D4B6C4214B9ADA00324554 /* LightingXYLPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D4B6C3214B9ADA00324554 /* LightingXYLPopupViewController.swift */; };
+		F3F8E52F20D12D3900450C06 /* ModelControlPopUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F8E52E20D12D3900450C06 /* ModelControlPopUpController.swift */; };
+		F3FEA06520D78829001E595D /* PrivacyPolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FEA06420D78829001E595D /* PrivacyPolicyViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F34AA1D62176051800798AAB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		048130D821638EAD00FBEFBC /* LogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
+		25339801216B685300483D21 /* SensorModelPropertyIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorModelPropertyIdentifier.swift; sourceTree = "<group>"; };
+		254C6B3E20CA4E780079F271 /* GenericModelNodeListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericModelNodeListController.swift; sourceTree = "<group>"; };
+		254C6B3F20CA4E780079F271 /* ModelListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelListViewController.swift; sourceTree = "<group>"; };
+		254C6B4020CA4E780079F271 /* VendorModelNodeListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VendorModelNodeListController.swift; sourceTree = "<group>"; };
+		254C6B4520CA4FA00079F271 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		254C6B4620CA4FA00079F271 /* MenuViewIntializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewIntializer.swift; sourceTree = "<group>"; };
+		254F3EA621510CE10078B0A1 /* CompanyIdentifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyIdentifiers.swift; sourceTree = "<group>"; };
+		25698F2B20DA386200E47A82 /* SignUpPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpPageViewController.swift; sourceTree = "<group>"; };
+		25698F2C20DA386200E47A82 /* LoginPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPageViewController.swift; sourceTree = "<group>"; };
+		2593155720E1FB9E0038A4C5 /* RecoverPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoverPasswordViewController.swift; sourceTree = "<group>"; };
+		2593155D20E1FDA30038A4C5 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
+		25B0229421677D9E00968368 /* SensorModelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorModelViewController.swift; sourceTree = "<group>"; };
+		25CC552E20CF94D8006BAADE /* JoinAndRegisterNetworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinAndRegisterNetworkViewController.swift; sourceTree = "<group>"; };
+		25CC553120CF958A006BAADE /* JoinedNetworkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinedNetworkTableViewCell.swift; sourceTree = "<group>"; };
+		25CC553420D121C5006BAADE /* ApplicationSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationSettingViewController.swift; sourceTree = "<group>"; };
+		25CC553720D234CA006BAADE /* LoginSignUpManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSignUpManager.swift; sourceTree = "<group>"; };
+		25EA33EC20C65DE30058842C /* HelpScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpScreenController.swift; sourceTree = "<group>"; };
+		25EA33F320C7E7B10058842C /* SyncInviteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncInviteViewController.swift; sourceTree = "<group>"; };
+		25EA33F520C81B120058842C /* CloudOperationsHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudOperationsHandler.swift; sourceTree = "<group>"; };
+		25F0FF65203A99DD0054B049 /* BlueNRG-Mesh App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BlueNRG-Mesh App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		25F6CC4120EF73B200283FAA /* viewActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewActivityIndicator.swift; sourceTree = "<group>"; };
+		45853B3B219ECFEE00432F86 /* NSDataNSStringConversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDataNSStringConversion.h; sourceTree = "<group>"; };
+		45853B3C219ECFEE00432F86 /* STMeshGenericModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMeshGenericModel.h; sourceTree = "<group>"; };
+		45853B3D219ECFEE00432F86 /* STMeshConfigurationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMeshConfigurationModel.h; sourceTree = "<group>"; };
+		45853B3E219ECFEE00432F86 /* STMeshBasicTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMeshBasicTypes.h; sourceTree = "<group>"; };
+		45853B3F219ECFEE00432F86 /* STMeshSensorModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMeshSensorModel.h; sourceTree = "<group>"; };
+		45853B40219ECFEE00432F86 /* STMeshProvisioner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMeshProvisioner.h; sourceTree = "<group>"; };
+		45853B41219ECFEE00432F86 /* STMeshVendorModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMeshVendorModel.h; sourceTree = "<group>"; };
+		45853B42219ECFEE00432F86 /* BlueNRG_Mesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlueNRG_Mesh.h; sourceTree = "<group>"; };
+		45853B43219ECFEE00432F86 /* STMeshLightingModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMeshLightingModel.h; sourceTree = "<group>"; };
+		45853B44219ECFEE00432F86 /* STMeshManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMeshManager.h; sourceTree = "<group>"; };
+		45853B45219ECFEE00432F86 /* STMeshCompositionDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMeshCompositionDataModel.h; sourceTree = "<group>"; };
+		45853B46219ECFEE00432F86 /* STMeshLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMeshLogger.h; sourceTree = "<group>"; };
+		45853B47219ECFEE00432F86 /* STMeshTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMeshTypes.h; sourceTree = "<group>"; };
+		45853B48219EDEFB00432F86 /* libBlueNRG-Mesh.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libBlueNRG-Mesh.a"; sourceTree = "<group>"; };
+		45853B4B219EE50800432F86 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		45853B4C219EE50800432F86 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		45E6F1D021876D2A009D6B3A /* STMeshSensorModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMeshSensorModel.h; sourceTree = "<group>"; };
+		45E6F1D121876D2A009D6B3A /* STMeshBasicTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMeshBasicTypes.h; sourceTree = "<group>"; };
+		45E6F1D221876D2A009D6B3A /* BlueNRG_Mesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlueNRG_Mesh.h; sourceTree = "<group>"; };
+		45E6F1D321876D2A009D6B3A /* STMeshLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMeshLogger.h; sourceTree = "<group>"; };
+		45E6F1D421876D2A009D6B3A /* STMeshConfigurationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMeshConfigurationModel.h; sourceTree = "<group>"; };
+		45E6F1D521876D2A009D6B3A /* STMeshCompositionDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMeshCompositionDataModel.h; sourceTree = "<group>"; };
+		45E6F1D721876D2A009D6B3A /* STMeshLightingModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMeshLightingModel.h; sourceTree = "<group>"; };
+		45E6F1D821876D2A009D6B3A /* NSDataNSStringConversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDataNSStringConversion.h; sourceTree = "<group>"; };
+		45E6F1DA21876D2A009D6B3A /* STMeshVendorModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMeshVendorModel.h; sourceTree = "<group>"; };
+		45E6F1DB21876D2A009D6B3A /* STMeshProvisioner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMeshProvisioner.h; sourceTree = "<group>"; };
+		45E6F1DC21876D2A009D6B3A /* STMeshGenericModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMeshGenericModel.h; sourceTree = "<group>"; };
+		45E6F1DE21876D2A009D6B3A /* STMeshManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMeshManager.h; sourceTree = "<group>"; };
+		45E6F1DF21876D2A009D6B3A /* STMeshTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMeshTypes.h; sourceTree = "<group>"; };
+		94EF98531F18823600B62198 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F31D6FC02108556400C623A4 /* AFError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFError.swift; sourceTree = "<group>"; };
+		F31D6FC12108556400C623A4 /* Alamofire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Alamofire.h; sourceTree = "<group>"; };
+		F31D6FC22108556400C623A4 /* Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alamofire.swift; sourceTree = "<group>"; };
+		F31D6FC32108556400C623A4 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		F31D6FC62108556400C623A4 /* MultipartFormData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipartFormData.swift; sourceTree = "<group>"; };
+		F31D6FC72108556400C623A4 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		F31D6FC82108556400C623A4 /* Notifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		F31D6FC92108556400C623A4 /* ParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
+		F31D6FCA2108556400C623A4 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		F31D6FCB2108556400C623A4 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		F31D6FCC2108556400C623A4 /* ResponseSerialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseSerialization.swift; sourceTree = "<group>"; };
+		F31D6FCD2108556400C623A4 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		F31D6FCE2108556400C623A4 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		F31D6FCF2108556400C623A4 /* SessionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionDelegate.swift; sourceTree = "<group>"; };
+		F31D6FD02108556400C623A4 /* SessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		F31D6FD12108556400C623A4 /* TaskDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDelegate.swift; sourceTree = "<group>"; };
+		F31D6FD22108556400C623A4 /* Timeline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timeline.swift; sourceTree = "<group>"; };
+		F31D6FD32108556400C623A4 /* Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		F31D6FE721085FC600C623A4 /* HelpGuide.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = HelpGuide.pdf; sourceTree = "<group>"; };
+		F321FD7520C50805004C48A0 /* Models.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Models.storyboard; sourceTree = "<group>"; };
+		F322FFE120E60B080055B5DA /* LightingCTLPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightingCTLPopupViewController.swift; sourceTree = "<group>"; };
+		F327B75A21623B4900958714 /* STLogReceiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STLogReceiver.swift; sourceTree = "<group>"; };
+		F327B75F2164B8BC00958714 /* LogTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogTableViewCell.swift; sourceTree = "<group>"; };
+		F3389606216C6943005394B1 /* NodeFeatureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeFeatureViewController.swift; sourceTree = "<group>"; };
+		F3389609216C77FB005394B1 /* NodeInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeInformationViewController.swift; sourceTree = "<group>"; };
+		F338A34320E20FCA00005DE0 /* LightingModelNodeListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightingModelNodeListController.swift; sourceTree = "<group>"; };
+		F34AA169216F0D6000798AAB /* NetworkDefaultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDefaultsViewController.swift; sourceTree = "<group>"; };
+		F34AA16C216F0DBF00798AAB /* PublishDefaultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishDefaultsViewController.swift; sourceTree = "<group>"; };
+		F34AA16E216F0DF900798AAB /* SubscribeDefaultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeDefaultsViewController.swift; sourceTree = "<group>"; };
+		F357A7682088A8CA000D88F9 /* DummyLink.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DummyLink.cpp; sourceTree = "<group>"; };
+		F363A15A20BE5E8D00E133A0 /* CloudSync.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CloudSync.storyboard; sourceTree = "<group>"; };
+		F377F9BE20C7ABAA008AD4EA /* SwiftProgressLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftProgressLoader.swift; sourceTree = "<group>"; };
+		F37A310020BD729E00D86DD7 /* UserHelperScreenManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserHelperScreenManager.swift; sourceTree = "<group>"; };
+		F37A310320BD735000D86DD7 /* ProvisionerAdditionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProvisionerAdditionController.swift; sourceTree = "<group>"; };
+		F37A310720BD756300D86DD7 /* CloudOperationConstantFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudOperationConstantFile.swift; sourceTree = "<group>"; };
+		F37A310920BD756300D86DD7 /* CloudWebRequestHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudWebRequestHandler.swift; sourceTree = "<group>"; };
+		F387E3F3212FC1060020B2D1 /* STMeshTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STMeshTabBarController.swift; sourceTree = "<group>"; };
+		F387E3F5212FC1430020B2D1 /* CommonModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonModels.swift; sourceTree = "<group>"; };
+		F387E3F8212FC1910020B2D1 /* SwiftyJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftyJSON.h; sourceTree = "<group>"; };
+		F387E3F9212FC1910020B2D1 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		F387E3FD212FC2310020B2D1 /* commonAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = commonAlertView.swift; sourceTree = "<group>"; };
+		F387E3FE212FC2310020B2D1 /* GUIAlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GUIAlertView.xib; sourceTree = "<group>"; };
+		F387E406212FCA110020B2D1 /* MeshDeviceListCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeshDeviceListCollectionViewCell.swift; sourceTree = "<group>"; };
+		F387E407212FCA110020B2D1 /* provisionedNodeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = provisionedNodeCollectionViewCell.swift; sourceTree = "<group>"; };
+		F387E40C212FCB400020B2D1 /* SignOutOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignOutOperation.swift; sourceTree = "<group>"; };
+		F38EA3F32089C63E00A998D6 /* About.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = About.storyboard; sourceTree = "<group>"; };
+		F38EA3F52089C63E00A998D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F38EA3F62089C63E00A998D6 /* Groups.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Groups.storyboard; sourceTree = "<group>"; };
+		F38EA3F72089C63E00A998D6 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		F38EA3F92089C63E00A998D6 /* ConfigurationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationTableViewCell.swift; sourceTree = "<group>"; };
+		F38EA3FA2089C63E00A998D6 /* GroupMembersHeaderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupMembersHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		F38EA3FB2089C63E00A998D6 /* GroupMembersTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupMembersTableViewCell.swift; sourceTree = "<group>"; };
+		F38EA3FC2089C63E00A998D6 /* GroupsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupsCollectionViewCell.swift; sourceTree = "<group>"; };
+		F38EA3FD2089C63E00A998D6 /* GroupSettingsPopupTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupSettingsPopupTableViewCell.swift; sourceTree = "<group>"; };
+		F38EA3FE2089C63E00A998D6 /* NodeElementTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NodeElementTableViewCell.swift; sourceTree = "<group>"; };
+		F38EA3FF2089C63E00A998D6 /* ProvisionedElementsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProvisionedElementsTableViewCell.swift; sourceTree = "<group>"; };
+		F38EA4002089C63E00A998D6 /* PublishPopUpTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublishPopUpTableViewCell.swift; sourceTree = "<group>"; };
+		F38EA4012089C63E00A998D6 /* SettingsGroupsPopupTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsGroupsPopupTableViewCell.swift; sourceTree = "<group>"; };
+		F38EA4022089C63E00A998D6 /* settingsNodeGroupsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = settingsNodeGroupsTableViewCell.swift; sourceTree = "<group>"; };
+		F38EA4352089C63F00A998D6 /* import_ExportConfigController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = import_ExportConfigController.swift; sourceTree = "<group>"; };
+		F38EA4372089C63F00A998D6 /* AddConfigurationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddConfigurationViewController.swift; sourceTree = "<group>"; };
+		F38EA4392089C63F00A998D6 /* MeshDeviceListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeshDeviceListViewController.swift; sourceTree = "<group>"; };
+		F38EA43A2089C63F00A998D6 /* NodesElementListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NodesElementListViewController.swift; sourceTree = "<group>"; };
+		F38EA43B2089C63F00A998D6 /* ProvisioningPopUpController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProvisioningPopUpController.swift; sourceTree = "<group>"; };
+		F38EA4452089C63F00A998D6 /* ConfigModelManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigModelManager.swift; sourceTree = "<group>"; };
+		F38EA4462089C63F00A998D6 /* ProvisioningManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProvisioningManager.swift; sourceTree = "<group>"; };
+		F38EA4482089C63F00A998D6 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		F38EA4852089C71200A998D6 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F38EA4862089C71200A998D6 /* BlueNRG-Mesh App-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BlueNRG-Mesh App-Bridging-Header.h"; sourceTree = "<group>"; };
+		F38EA4882089C71200A998D6 /* CommonTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonTypes.swift; sourceTree = "<group>"; };
+		F38EA4892089C71200A998D6 /* CommonUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonUtils.swift; sourceTree = "<group>"; };
+		F38EA48B2089C71200A998D6 /* FabricsCustomEvents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FabricsCustomEvents.swift; sourceTree = "<group>"; };
+		F38EA48C2089C71200A998D6 /* NetworkConfigDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkConfigDataManager.swift; sourceTree = "<group>"; };
+		F38EA48E2089C71200A998D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F38EA4902089C71200A998D6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F38EA4912089C71200A998D6 /* jsonFile.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jsonFile.json; sourceTree = "<group>"; };
+		F38EA4922089C71200A998D6 /* LicenseAgreement.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = LicenseAgreement.pdf; sourceTree = "<group>"; };
+		F38EA49C2089C71200A998D6 /* UserHelperScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserHelperScreen.swift; sourceTree = "<group>"; };
+		F38EA4B02089E0CD00A998D6 /* ElementSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElementSettingViewController.swift; sourceTree = "<group>"; };
+		F38EA4B12089E0CD00A998D6 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		F38EA4B22089E0CD00A998D6 /* MeshNodeListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeshNodeListViewController.swift; sourceTree = "<group>"; };
+		F38EA4B32089E0CD00A998D6 /* NodeSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NodeSettingViewController.swift; sourceTree = "<group>"; };
+		F38EA4B42089E0CD00A998D6 /* PublishPopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublishPopUpViewController.swift; sourceTree = "<group>"; };
+		F38EA4B52089E0CD00A998D6 /* RemovePopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemovePopupViewController.swift; sourceTree = "<group>"; };
+		F38EA4B62089E0CD00A998D6 /* SettingsGroupsPopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsGroupsPopupViewController.swift; sourceTree = "<group>"; };
+		F38EA4BF2089E13F00A998D6 /* AddGroupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddGroupViewController.swift; sourceTree = "<group>"; };
+		F38EA4C02089E13F00A998D6 /* GroupsCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupsCollectionViewController.swift; sourceTree = "<group>"; };
+		F38EA4C12089E13F00A998D6 /* GroupSettingsPopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupSettingsPopupViewController.swift; sourceTree = "<group>"; };
+		F38EA4C22089E13F00A998D6 /* GroupSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupSettingsViewController.swift; sourceTree = "<group>"; };
+		F38EA4C42089E13F00A998D6 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		F38EA4C62089E13F00A998D6 /* ComponentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentsViewController.swift; sourceTree = "<group>"; };
+		F38EA4C72089E13F00A998D6 /* LicenseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LicenseViewController.swift; sourceTree = "<group>"; };
+		F395E87E2137B98F0023F1B7 /* Color+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		F395E882213956280023F1B7 /* STCustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STCustomTextField.swift; sourceTree = "<group>"; };
+		F3A0A06420BEC39400086A38 /* STMeshBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STMeshBaseViewController.swift; sourceTree = "<group>"; };
+		F3A88FB8208D9CD400E7AA93 /* LEDControlManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LEDControlManager.swift; sourceTree = "<group>"; };
+		F3D4B6C0214B8E6A00324554 /* LightingHSLPopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightingHSLPopupViewController.swift; sourceTree = "<group>"; };
+		F3D4B6C3214B9ADA00324554 /* LightingXYLPopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightingXYLPopupViewController.swift; sourceTree = "<group>"; };
+		F3F8E52E20D12D3900450C06 /* ModelControlPopUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelControlPopUpController.swift; sourceTree = "<group>"; };
+		F3FEA06420D78829001E595D /* PrivacyPolicyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		94C8A13C1F13534200BE3954 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45853B49219EDEFB00432F86 /* libBlueNRG-Mesh.a in Frameworks */,
+				45853B4E219EE50800432F86 /* Crashlytics.framework in Frameworks */,
+				45853B4D219EE50800432F86 /* Fabric.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		048130D621638E9200FBEFBC /* LogViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				048130D821638EAD00FBEFBC /* LogViewController.swift */,
+			);
+			path = LogViewControllers;
+			sourceTree = "<group>";
+		};
+		254C6B3C20CA4E780079F271 /* ModelViewsControllers */ = {
+			isa = PBXGroup;
+			children = (
+				254C6B3D20CA4E780079F271 /* ModelListViewController */,
+			);
+			path = ModelViewsControllers;
+			sourceTree = "<group>";
+		};
+		254C6B3D20CA4E780079F271 /* ModelListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F3D4B6C3214B9ADA00324554 /* LightingXYLPopupViewController.swift */,
+				F3D4B6C0214B8E6A00324554 /* LightingHSLPopupViewController.swift */,
+				254C6B3E20CA4E780079F271 /* GenericModelNodeListController.swift */,
+				254C6B3F20CA4E780079F271 /* ModelListViewController.swift */,
+				254C6B4020CA4E780079F271 /* VendorModelNodeListController.swift */,
+				F3F8E52E20D12D3900450C06 /* ModelControlPopUpController.swift */,
+				F338A34320E20FCA00005DE0 /* LightingModelNodeListController.swift */,
+				F322FFE120E60B080055B5DA /* LightingCTLPopupViewController.swift */,
+				25B0229421677D9E00968368 /* SensorModelViewController.swift */,
+			);
+			path = ModelListViewController;
+			sourceTree = "<group>";
+		};
+		254C6B4420CA4FA00079F271 /* DrawerMenu */ = {
+			isa = PBXGroup;
+			children = (
+				254C6B4520CA4FA00079F271 /* MenuViewController.swift */,
+				254C6B4620CA4FA00079F271 /* MenuViewIntializer.swift */,
+				25CC553420D121C5006BAADE /* ApplicationSettingViewController.swift */,
+			);
+			path = DrawerMenu;
+			sourceTree = "<group>";
+		};
+		45853B37219ECF1A00432F86 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				45853B48219EDEFB00432F86 /* libBlueNRG-Mesh.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		45853B3A219ECFEE00432F86 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				45853B3B219ECFEE00432F86 /* NSDataNSStringConversion.h */,
+				45853B3C219ECFEE00432F86 /* STMeshGenericModel.h */,
+				45853B3D219ECFEE00432F86 /* STMeshConfigurationModel.h */,
+				45853B3E219ECFEE00432F86 /* STMeshBasicTypes.h */,
+				45853B3F219ECFEE00432F86 /* STMeshSensorModel.h */,
+				45853B40219ECFEE00432F86 /* STMeshProvisioner.h */,
+				45853B41219ECFEE00432F86 /* STMeshVendorModel.h */,
+				45853B42219ECFEE00432F86 /* BlueNRG_Mesh.h */,
+				45853B43219ECFEE00432F86 /* STMeshLightingModel.h */,
+				45853B44219ECFEE00432F86 /* STMeshManager.h */,
+				45853B45219ECFEE00432F86 /* STMeshCompositionDataModel.h */,
+				45853B46219ECFEE00432F86 /* STMeshLogger.h */,
+				45853B47219ECFEE00432F86 /* STMeshTypes.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		45853B4A219EE50800432F86 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				45853B4B219EE50800432F86 /* Fabric.framework */,
+				45853B4C219EE50800432F86 /* Crashlytics.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		94C8A1361F13534200BE3954 = {
+			isa = PBXGroup;
+			children = (
+				F357A7682088A8CA000D88F9 /* DummyLink.cpp */,
+				F360F4B720346A9000C0CF81 /* BlueNRG-Mesh_App */,
+				94EF98521F18823600B62198 /* Frameworks */,
+				25F0FF65203A99DD0054B049 /* BlueNRG-Mesh App.app */,
+			);
+			sourceTree = "<group>";
+		};
+		94EF98521F18823600B62198 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				94EF98531F18823600B62198 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F31D6FBF2108556400C623A4 /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				F31D6FC02108556400C623A4 /* AFError.swift */,
+				F31D6FC12108556400C623A4 /* Alamofire.h */,
+				F31D6FC22108556400C623A4 /* Alamofire.swift */,
+				F31D6FC32108556400C623A4 /* DispatchQueue+Alamofire.swift */,
+				F31D6FC62108556400C623A4 /* MultipartFormData.swift */,
+				F31D6FC72108556400C623A4 /* NetworkReachabilityManager.swift */,
+				F31D6FC82108556400C623A4 /* Notifications.swift */,
+				F31D6FC92108556400C623A4 /* ParameterEncoding.swift */,
+				F31D6FCA2108556400C623A4 /* Request.swift */,
+				F31D6FCB2108556400C623A4 /* Response.swift */,
+				F31D6FCC2108556400C623A4 /* ResponseSerialization.swift */,
+				F31D6FCD2108556400C623A4 /* Result.swift */,
+				F31D6FCE2108556400C623A4 /* ServerTrustPolicy.swift */,
+				F31D6FCF2108556400C623A4 /* SessionDelegate.swift */,
+				F31D6FD02108556400C623A4 /* SessionManager.swift */,
+				F31D6FD12108556400C623A4 /* TaskDelegate.swift */,
+				F31D6FD22108556400C623A4 /* Timeline.swift */,
+				F31D6FD32108556400C623A4 /* Validation.swift */,
+			);
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		F32110A8213E997F00D32D22 /* JsonValidator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = JsonValidator;
+			sourceTree = "<group>";
+		};
+		F360F4B720346A9000C0CF81 /* BlueNRG-Mesh_App */ = {
+			isa = PBXGroup;
+			children = (
+				F38EA48D2089C71200A998D6 /* SupportingFiles */,
+				F38EA4442089C63F00A998D6 /* Managers */,
+				F38EA3EE2089C63E00A998D6 /* Views */,
+				F38EA4292089C63F00A998D6 /* Controllers */,
+				F38EA4842089C71200A998D6 /* CommonClasses */,
+				F38EA4472089C63F00A998D6 /* Extensions */,
+				F38EA41B2089C63F00A998D6 /* ExternalLib */,
+			);
+			path = "BlueNRG-Mesh_App";
+			sourceTree = "<group>";
+		};
+		F36850EB20DA132A00CB92F5 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				45E6F1D221876D2A009D6B3A /* BlueNRG_Mesh.h */,
+				45E6F1D821876D2A009D6B3A /* NSDataNSStringConversion.h */,
+				45E6F1D121876D2A009D6B3A /* STMeshBasicTypes.h */,
+				45E6F1D521876D2A009D6B3A /* STMeshCompositionDataModel.h */,
+				45E6F1D421876D2A009D6B3A /* STMeshConfigurationModel.h */,
+				45E6F1DC21876D2A009D6B3A /* STMeshGenericModel.h */,
+				45E6F1D721876D2A009D6B3A /* STMeshLightingModel.h */,
+				45E6F1D321876D2A009D6B3A /* STMeshLogger.h */,
+				45E6F1DE21876D2A009D6B3A /* STMeshManager.h */,
+				45E6F1DB21876D2A009D6B3A /* STMeshProvisioner.h */,
+				45E6F1D021876D2A009D6B3A /* STMeshSensorModel.h */,
+				45E6F1DF21876D2A009D6B3A /* STMeshTypes.h */,
+				45E6F1DA21876D2A009D6B3A /* STMeshVendorModel.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		F377F9BC20C7A864008AD4EA /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				F377F9BE20C7ABAA008AD4EA /* SwiftProgressLoader.swift */,
+				F395E882213956280023F1B7 /* STCustomTextField.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		F37A310520BD756300D86DD7 /* CloudControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F38EA4352089C63F00A998D6 /* import_ExportConfigController.swift */,
+				F37A310920BD756300D86DD7 /* CloudWebRequestHandler.swift */,
+				2593155720E1FB9E0038A4C5 /* RecoverPasswordViewController.swift */,
+				F37A310720BD756300D86DD7 /* CloudOperationConstantFile.swift */,
+				25F6CC4120EF73B200283FAA /* viewActivityIndicator.swift */,
+				25CC553720D234CA006BAADE /* LoginSignUpManager.swift */,
+				F387E40C212FCB400020B2D1 /* SignOutOperation.swift */,
+				25698F2C20DA386200E47A82 /* LoginPageViewController.swift */,
+				25698F2B20DA386200E47A82 /* SignUpPageViewController.swift */,
+				25CC552E20CF94D8006BAADE /* JoinAndRegisterNetworkViewController.swift */,
+				25CC553120CF958A006BAADE /* JoinedNetworkTableViewCell.swift */,
+				25EA33F520C81B120058842C /* CloudOperationsHandler.swift */,
+				25EA33F320C7E7B10058842C /* SyncInviteViewController.swift */,
+				2593155D20E1FDA30038A4C5 /* ChangePasswordViewController.swift */,
+			);
+			path = CloudControllers;
+			sourceTree = "<group>";
+		};
+		F387E3F7212FC1910020B2D1 /* SwiftyJson */ = {
+			isa = PBXGroup;
+			children = (
+				F387E3F8212FC1910020B2D1 /* SwiftyJSON.h */,
+				F387E3F9212FC1910020B2D1 /* SwiftyJSON.swift */,
+			);
+			path = SwiftyJson;
+			sourceTree = "<group>";
+		};
+		F387E3FB212FC2310020B2D1 /* CommonViews */ = {
+			isa = PBXGroup;
+			children = (
+				F387E3FC212FC2310020B2D1 /* GenricAlertView */,
+			);
+			path = CommonViews;
+			sourceTree = "<group>";
+		};
+		F387E3FC212FC2310020B2D1 /* GenricAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				F387E3FD212FC2310020B2D1 /* commonAlertView.swift */,
+				F387E3FE212FC2310020B2D1 /* GUIAlertView.xib */,
+			);
+			path = GenricAlertView;
+			sourceTree = "<group>";
+		};
+		F387E405212FCA110020B2D1 /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				F387E406212FCA110020B2D1 /* MeshDeviceListCollectionViewCell.swift */,
+				F387E407212FCA110020B2D1 /* provisionedNodeCollectionViewCell.swift */,
+			);
+			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
+		F38EA3EE2089C63E00A998D6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F387E405212FCA110020B2D1 /* CollectionViewCells */,
+				F387E3FB212FC2310020B2D1 /* CommonViews */,
+				F377F9BC20C7A864008AD4EA /* CustomViews */,
+				F38EA3F22089C63E00A998D6 /* Storyboards */,
+				F38EA3F82089C63E00A998D6 /* TableViewCells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F38EA3F22089C63E00A998D6 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F363A15A20BE5E8D00E133A0 /* CloudSync.storyboard */,
+				F38EA3F42089C63E00A998D6 /* LaunchScreen.storyboard */,
+				F38EA3F32089C63E00A998D6 /* About.storyboard */,
+				F38EA3F62089C63E00A998D6 /* Groups.storyboard */,
+				F38EA3F72089C63E00A998D6 /* Main.storyboard */,
+				F321FD7520C50805004C48A0 /* Models.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		F38EA3F82089C63E00A998D6 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				F38EA3F92089C63E00A998D6 /* ConfigurationTableViewCell.swift */,
+				F38EA3FA2089C63E00A998D6 /* GroupMembersHeaderTableViewCell.swift */,
+				F38EA3FB2089C63E00A998D6 /* GroupMembersTableViewCell.swift */,
+				F38EA3FC2089C63E00A998D6 /* GroupsCollectionViewCell.swift */,
+				F38EA3FD2089C63E00A998D6 /* GroupSettingsPopupTableViewCell.swift */,
+				F38EA3FE2089C63E00A998D6 /* NodeElementTableViewCell.swift */,
+				F38EA3FF2089C63E00A998D6 /* ProvisionedElementsTableViewCell.swift */,
+				F38EA4002089C63E00A998D6 /* PublishPopUpTableViewCell.swift */,
+				F38EA4012089C63E00A998D6 /* SettingsGroupsPopupTableViewCell.swift */,
+				F38EA4022089C63E00A998D6 /* settingsNodeGroupsTableViewCell.swift */,
+				F327B75F2164B8BC00958714 /* LogTableViewCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		F38EA41B2089C63F00A998D6 /* ExternalLib */ = {
+			isa = PBXGroup;
+			children = (
+				45853B4A219EE50800432F86 /* Frameworks */,
+				F32110A8213E997F00D32D22 /* JsonValidator */,
+				F387E3F7212FC1910020B2D1 /* SwiftyJson */,
+				F38EA41C2089C63F00A998D6 /* libBlueNRG */,
+				F31D6FBF2108556400C623A4 /* Alamofire */,
+			);
+			path = ExternalLib;
+			sourceTree = "<group>";
+		};
+		F38EA41C2089C63F00A998D6 /* libBlueNRG */ = {
+			isa = PBXGroup;
+			children = (
+				45853B3A219ECFEE00432F86 /* include */,
+				45853B37219ECF1A00432F86 /* lib */,
+				F36850EB20DA132A00CB92F5 /* include */,
+			);
+			path = libBlueNRG;
+			sourceTree = "<group>";
+		};
+		F38EA4292089C63F00A998D6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				048130D621638E9200FBEFBC /* LogViewControllers */,
+				254C6B4420CA4FA00079F271 /* DrawerMenu */,
+				254C6B3C20CA4E780079F271 /* ModelViewsControllers */,
+				F3A0A06320BEC39400086A38 /* BleMeshBaseviewController */,
+				F37A310520BD756300D86DD7 /* CloudControllers */,
+				F38EA4C32089E13F00A998D6 /* AppSettingViewControllers */,
+				F38EA4BE2089E13F00A998D6 /* GroupViewsControllers */,
+				F38EA4AF2089E0CD00A998D6 /* ProxyViewControllers */,
+				F38EA4362089C63F00A998D6 /* ProvisioningControlllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F38EA4362089C63F00A998D6 /* ProvisioningControlllers */ = {
+			isa = PBXGroup;
+			children = (
+				F38EA43B2089C63F00A998D6 /* ProvisioningPopUpController.swift */,
+				F38EA4392089C63F00A998D6 /* MeshDeviceListViewController.swift */,
+				F38EA4372089C63F00A998D6 /* AddConfigurationViewController.swift */,
+				F38EA43A2089C63F00A998D6 /* NodesElementListViewController.swift */,
+			);
+			path = ProvisioningControlllers;
+			sourceTree = "<group>";
+		};
+		F38EA4442089C63F00A998D6 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				F38EA4452089C63F00A998D6 /* ConfigModelManager.swift */,
+				F38EA4462089C63F00A998D6 /* ProvisioningManager.swift */,
+				F3A88FB8208D9CD400E7AA93 /* LEDControlManager.swift */,
+				F37A310020BD729E00D86DD7 /* UserHelperScreenManager.swift */,
+				F327B75A21623B4900958714 /* STLogReceiver.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		F38EA4472089C63F00A998D6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F395E87E2137B98F0023F1B7 /* Color+Extensions.swift */,
+				F38EA4482089C63F00A998D6 /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F38EA4842089C71200A998D6 /* CommonClasses */ = {
+			isa = PBXGroup;
+			children = (
+				F38EA4852089C71200A998D6 /* AppDelegate.swift */,
+				F38EA48C2089C71200A998D6 /* NetworkConfigDataManager.swift */,
+				F38EA4862089C71200A998D6 /* BlueNRG-Mesh App-Bridging-Header.h */,
+				F38EA4952089C71200A998D6 /* User Helper Screen */,
+				F38EA4872089C71200A998D6 /* CommonUtils */,
+			);
+			path = CommonClasses;
+			sourceTree = "<group>";
+		};
+		F38EA4872089C71200A998D6 /* CommonUtils */ = {
+			isa = PBXGroup;
+			children = (
+				254F3EA621510CE10078B0A1 /* CompanyIdentifiers.swift */,
+				25339801216B685300483D21 /* SensorModelPropertyIdentifier.swift */,
+				F387E3F5212FC1430020B2D1 /* CommonModels.swift */,
+				F38EA4892089C71200A998D6 /* CommonUtils.swift */,
+				F38EA4882089C71200A998D6 /* CommonTypes.swift */,
+				F38EA48A2089C71200A998D6 /* Fabrics Custom Class */,
+			);
+			path = CommonUtils;
+			sourceTree = "<group>";
+		};
+		F38EA48A2089C71200A998D6 /* Fabrics Custom Class */ = {
+			isa = PBXGroup;
+			children = (
+				F38EA48B2089C71200A998D6 /* FabricsCustomEvents.swift */,
+			);
+			path = "Fabrics Custom Class";
+			sourceTree = "<group>";
+		};
+		F38EA48D2089C71200A998D6 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				F31D6FE721085FC600C623A4 /* HelpGuide.pdf */,
+				F38EA48E2089C71200A998D6 /* Assets.xcassets */,
+				F38EA4902089C71200A998D6 /* Info.plist */,
+				F38EA4912089C71200A998D6 /* jsonFile.json */,
+				F38EA4922089C71200A998D6 /* LicenseAgreement.pdf */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		F38EA4952089C71200A998D6 /* User Helper Screen */ = {
+			isa = PBXGroup;
+			children = (
+				F38EA49C2089C71200A998D6 /* UserHelperScreen.swift */,
+			);
+			path = "User Helper Screen";
+			sourceTree = "<group>";
+		};
+		F38EA4AF2089E0CD00A998D6 /* ProxyViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F38EA4B12089E0CD00A998D6 /* InfoViewController.swift */,
+				F37A310320BD735000D86DD7 /* ProvisionerAdditionController.swift */,
+				F38EA4B32089E0CD00A998D6 /* NodeSettingViewController.swift */,
+				F38EA4B42089E0CD00A998D6 /* PublishPopUpViewController.swift */,
+				F38EA4B52089E0CD00A998D6 /* RemovePopupViewController.swift */,
+				F38EA4B22089E0CD00A998D6 /* MeshNodeListViewController.swift */,
+				F38EA4B02089E0CD00A998D6 /* ElementSettingViewController.swift */,
+				F38EA4B62089E0CD00A998D6 /* SettingsGroupsPopupViewController.swift */,
+				F3389606216C6943005394B1 /* NodeFeatureViewController.swift */,
+				F3389609216C77FB005394B1 /* NodeInformationViewController.swift */,
+				F34AA169216F0D6000798AAB /* NetworkDefaultsViewController.swift */,
+				F34AA16C216F0DBF00798AAB /* PublishDefaultsViewController.swift */,
+				F34AA16E216F0DF900798AAB /* SubscribeDefaultsViewController.swift */,
+			);
+			path = ProxyViewControllers;
+			sourceTree = "<group>";
+		};
+		F38EA4BE2089E13F00A998D6 /* GroupViewsControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F38EA4BF2089E13F00A998D6 /* AddGroupViewController.swift */,
+				F38EA4C22089E13F00A998D6 /* GroupSettingsViewController.swift */,
+				F38EA4C02089E13F00A998D6 /* GroupsCollectionViewController.swift */,
+				F38EA4C12089E13F00A998D6 /* GroupSettingsPopupViewController.swift */,
+			);
+			path = GroupViewsControllers;
+			sourceTree = "<group>";
+		};
+		F38EA4C32089E13F00A998D6 /* AppSettingViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F38EA4C42089E13F00A998D6 /* AboutViewController.swift */,
+				F38EA4C72089E13F00A998D6 /* LicenseViewController.swift */,
+				F38EA4C62089E13F00A998D6 /* ComponentsViewController.swift */,
+				25EA33EC20C65DE30058842C /* HelpScreenController.swift */,
+				F3FEA06420D78829001E595D /* PrivacyPolicyViewController.swift */,
+			);
+			path = AppSettingViewControllers;
+			sourceTree = "<group>";
+		};
+		F3A0A06320BEC39400086A38 /* BleMeshBaseviewController */ = {
+			isa = PBXGroup;
+			children = (
+				F387E3F3212FC1060020B2D1 /* STMeshTabBarController.swift */,
+				F3A0A06420BEC39400086A38 /* STMeshBaseViewController.swift */,
+			);
+			path = BleMeshBaseviewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		94C8A13E1F13534200BE3954 /* BlueNRG-Mesh App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94C8A1511F13534200BE3954 /* Build configuration list for PBXNativeTarget "BlueNRG-Mesh App" */;
+			buildPhases = (
+				94C8A13B1F13534200BE3954 /* Sources */,
+				94C8A13C1F13534200BE3954 /* Frameworks */,
+				94C8A13D1F13534200BE3954 /* Resources */,
+				F3CB7B4A2024883300514733 /* Run Script */,
+				F34AA1D62176051800798AAB /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BlueNRG-Mesh App";
+			productName = testappBLE;
+			productReference = 25F0FF65203A99DD0054B049 /* BlueNRG-Mesh App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		94C8A1371F13534200BE3954 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = STM;
+				TargetAttributes = {
+					94C8A13E1F13534200BE3954 = {
+						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+							com.apple.iCloud = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 94C8A13A1F13534200BE3954 /* Build configuration list for PBXProject "BlueNRG-Mesh App" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 94C8A1361F13534200BE3954;
+			productRefGroup = 94C8A1361F13534200BE3954;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				94C8A13E1F13534200BE3954 /* BlueNRG-Mesh App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		94C8A13D1F13534200BE3954 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F38EA44B2089C63F00A998D6 /* About.storyboard in Resources */,
+				F38EA44C2089C63F00A998D6 /* LaunchScreen.storyboard in Resources */,
+				F38EA44D2089C63F00A998D6 /* Groups.storyboard in Resources */,
+				F38EA44E2089C63F00A998D6 /* Main.storyboard in Resources */,
+				F38EA4A62089C71300A998D6 /* LicenseAgreement.pdf in Resources */,
+				F38EA4A22089C71300A998D6 /* Assets.xcassets in Resources */,
+				F321FD7620C50805004C48A0 /* Models.storyboard in Resources */,
+				F31D6FE821085FC700C623A4 /* HelpGuide.pdf in Resources */,
+				F38EA4A52089C71300A998D6 /* jsonFile.json in Resources */,
+				F387E402212FC2310020B2D1 /* GUIAlertView.xib in Resources */,
+				F363A15B20BE5E8D00E133A0 /* CloudSync.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F3CB7B4A2024883300514733 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "
+";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		94C8A13B1F13534200BE3954 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25B0229521677D9E00968368 /* SensorModelViewController.swift in Sources */,
+				254C6B4720CA4FA00079F271 /* MenuViewController.swift in Sources */,
+				F38EA4562089C63F00A998D6 /* PublishPopUpTableViewCell.swift in Sources */,
+				F387E3F6212FC1430020B2D1 /* CommonModels.swift in Sources */,
+				F3A88FB9208D9CD400E7AA93 /* LEDControlManager.swift in Sources */,
+				F38EA4BA2089E0CD00A998D6 /* NodeSettingViewController.swift in Sources */,
+				F31D6FE32108556400C623A4 /* SessionManager.swift in Sources */,
+				F38EA4C82089E13F00A998D6 /* AddGroupViewController.swift in Sources */,
+				F322FFE220E60B080055B5DA /* LightingCTLPopupViewController.swift in Sources */,
+				F3D4B6C2214B8E6A00324554 /* LightingHSLPopupViewController.swift in Sources */,
+				F38EA4CB2089E13F00A998D6 /* GroupSettingsViewController.swift in Sources */,
+				25339802216B685300483D21 /* SensorModelPropertyIdentifier.swift in Sources */,
+				F38EA4B92089E0CD00A998D6 /* MeshNodeListViewController.swift in Sources */,
+				F38EA49D2089C71300A998D6 /* AppDelegate.swift in Sources */,
+				F338A34420E20FCA00005DE0 /* LightingModelNodeListController.swift in Sources */,
+				F38EA4542089C63F00A998D6 /* NodeElementTableViewCell.swift in Sources */,
+				F38EA4792089C63F00A998D6 /* ProvisioningPopUpController.swift in Sources */,
+				25CC552F20CF94D8006BAADE /* JoinAndRegisterNetworkViewController.swift in Sources */,
+				F37A311420BD756300D86DD7 /* CloudWebRequestHandler.swift in Sources */,
+				F31D6FD92108556400C623A4 /* MultipartFormData.swift in Sources */,
+				F38EA4522089C63F00A998D6 /* GroupsCollectionViewCell.swift in Sources */,
+				F31D6FE42108556400C623A4 /* TaskDelegate.swift in Sources */,
+				F31D6FE02108556400C623A4 /* Result.swift in Sources */,
+				254C6B4220CA4E780079F271 /* ModelListViewController.swift in Sources */,
+				254C6B4320CA4E780079F271 /* VendorModelNodeListController.swift in Sources */,
+				F38EA4A02089C71300A998D6 /* FabricsCustomEvents.swift in Sources */,
+				F34AA16A216F0D6000798AAB /* NetworkDefaultsViewController.swift in Sources */,
+				25EA33F620C81B120058842C /* CloudOperationsHandler.swift in Sources */,
+				F38EA49F2089C71300A998D6 /* CommonUtils.swift in Sources */,
+				F37A311320BD756300D86DD7 /* CloudOperationConstantFile.swift in Sources */,
+				F38EA4CE2089E13F00A998D6 /* ComponentsViewController.swift in Sources */,
+				F38EA4812089C63F00A998D6 /* ConfigModelManager.swift in Sources */,
+				F38EA4BD2089E0CD00A998D6 /* SettingsGroupsPopupViewController.swift in Sources */,
+				F38EA4BB2089E0CD00A998D6 /* PublishPopUpViewController.swift in Sources */,
+				F38EA4582089C63F00A998D6 /* settingsNodeGroupsTableViewCell.swift in Sources */,
+				254F3EA821510CE10078B0A1 /* CompanyIdentifiers.swift in Sources */,
+				F38EA4772089C63F00A998D6 /* MeshDeviceListViewController.swift in Sources */,
+				F387E409212FCA110020B2D1 /* provisionedNodeCollectionViewCell.swift in Sources */,
+				F31D6FDE2108556400C623A4 /* Response.swift in Sources */,
+				F38EA4782089C63F00A998D6 /* NodesElementListViewController.swift in Sources */,
+				F38EA44F2089C63F00A998D6 /* ConfigurationTableViewCell.swift in Sources */,
+				F38EA4512089C63F00A998D6 /* GroupMembersTableViewCell.swift in Sources */,
+				F395E883213956280023F1B7 /* STCustomTextField.swift in Sources */,
+				F31D6FE22108556400C623A4 /* SessionDelegate.swift in Sources */,
+				F38EA4BC2089E0CD00A998D6 /* RemovePopupViewController.swift in Sources */,
+				254C6B4820CA4FA00079F271 /* MenuViewIntializer.swift in Sources */,
+				F31D6FD52108556400C623A4 /* Alamofire.swift in Sources */,
+				F31D6FDB2108556400C623A4 /* Notifications.swift in Sources */,
+				F327B7602164B8BC00958714 /* LogTableViewCell.swift in Sources */,
+				F38EA4AE2089C71300A998D6 /* UserHelperScreen.swift in Sources */,
+				F387E3F4212FC1060020B2D1 /* STMeshTabBarController.swift in Sources */,
+				048130D921638EAD00FBEFBC /* LogViewController.swift in Sources */,
+				25698F2D20DA386200E47A82 /* SignUpPageViewController.swift in Sources */,
+				F31D6FDC2108556400C623A4 /* ParameterEncoding.swift in Sources */,
+				F395E8802137B9900023F1B7 /* Color+Extensions.swift in Sources */,
+				F31D6FDD2108556400C623A4 /* Request.swift in Sources */,
+				F31D6FE52108556400C623A4 /* Timeline.swift in Sources */,
+				254C6B4120CA4E780079F271 /* GenericModelNodeListController.swift in Sources */,
+				F357A76B2088A8CA000D88F9 /* DummyLink.cpp in Sources */,
+				F34AA16F216F0DF900798AAB /* SubscribeDefaultsViewController.swift in Sources */,
+				F3D4B6C4214B9ADA00324554 /* LightingXYLPopupViewController.swift in Sources */,
+				F38EA4752089C63F00A998D6 /* AddConfigurationViewController.swift in Sources */,
+				F3F8E52F20D12D3900450C06 /* ModelControlPopUpController.swift in Sources */,
+				F37A310420BD735000D86DD7 /* ProvisionerAdditionController.swift in Sources */,
+				25EA33F420C7E7B10058842C /* SyncInviteViewController.swift in Sources */,
+				F31D6FDF2108556400C623A4 /* ResponseSerialization.swift in Sources */,
+				F38EA4CA2089E13F00A998D6 /* GroupSettingsPopupViewController.swift in Sources */,
+				F31D6FE62108556400C623A4 /* Validation.swift in Sources */,
+				2593155820E1FB9E0038A4C5 /* RecoverPasswordViewController.swift in Sources */,
+				F34AA16D216F0DBF00798AAB /* PublishDefaultsViewController.swift in Sources */,
+				25F6CC4220EF73B200283FAA /* viewActivityIndicator.swift in Sources */,
+				F37A310220BD729F00D86DD7 /* UserHelperScreenManager.swift in Sources */,
+				F38EA4B82089E0CD00A998D6 /* InfoViewController.swift in Sources */,
+				25CC553820D234CA006BAADE /* LoginSignUpManager.swift in Sources */,
+				F3A0A06520BEC39400086A38 /* STMeshBaseViewController.swift in Sources */,
+				F38EA4822089C63F00A998D6 /* ProvisioningManager.swift in Sources */,
+				F38EA4C92089E13F00A998D6 /* GroupsCollectionViewController.swift in Sources */,
+				F31D6FE12108556400C623A4 /* ServerTrustPolicy.swift in Sources */,
+				F377F9BF20C7ABAA008AD4EA /* SwiftProgressLoader.swift in Sources */,
+				F38EA4532089C63F00A998D6 /* GroupSettingsPopupTableViewCell.swift in Sources */,
+				F38EA4832089C63F00A998D6 /* Extensions.swift in Sources */,
+				F387E408212FCA110020B2D1 /* MeshDeviceListCollectionViewCell.swift in Sources */,
+				25CC553520D121C5006BAADE /* ApplicationSettingViewController.swift in Sources */,
+				25CC553220CF958A006BAADE /* JoinedNetworkTableViewCell.swift in Sources */,
+				F38EA4572089C63F00A998D6 /* SettingsGroupsPopupTableViewCell.swift in Sources */,
+				F387E40D212FCB400020B2D1 /* SignOutOperation.swift in Sources */,
+				F38EA4CF2089E13F00A998D6 /* LicenseViewController.swift in Sources */,
+				25698F2E20DA386200E47A82 /* LoginPageViewController.swift in Sources */,
+				F38EA4CC2089E13F00A998D6 /* AboutViewController.swift in Sources */,
+				F38EA4A12089C71300A998D6 /* NetworkConfigDataManager.swift in Sources */,
+				2593155E20E1FDA30038A4C5 /* ChangePasswordViewController.swift in Sources */,
+				F3389607216C6943005394B1 /* NodeFeatureViewController.swift in Sources */,
+				F38EA4502089C63F00A998D6 /* GroupMembersHeaderTableViewCell.swift in Sources */,
+				F38EA4B72089E0CD00A998D6 /* ElementSettingViewController.swift in Sources */,
+				F31D6FDA2108556400C623A4 /* NetworkReachabilityManager.swift in Sources */,
+				F327B75B21623B4900958714 /* STLogReceiver.swift in Sources */,
+				F387E401212FC2310020B2D1 /* commonAlertView.swift in Sources */,
+				F338960A216C77FB005394B1 /* NodeInformationViewController.swift in Sources */,
+				F387E3FA212FC1910020B2D1 /* SwiftyJSON.swift in Sources */,
+				F3FEA06520D78829001E595D /* PrivacyPolicyViewController.swift in Sources */,
+				F31D6FD42108556400C623A4 /* AFError.swift in Sources */,
+				F38EA4742089C63F00A998D6 /* import_ExportConfigController.swift in Sources */,
+				F31D6FD62108556400C623A4 /* DispatchQueue+Alamofire.swift in Sources */,
+				F38EA4552089C63F00A998D6 /* ProvisionedElementsTableViewCell.swift in Sources */,
+				F38EA49E2089C71300A998D6 /* CommonTypes.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F38EA3F42089C63E00A998D6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F38EA3F52089C63E00A998D6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		94C8A14F1F13534200BE3954 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Debug;
+		};
+		94C8A1501F13534200BE3954 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Release;
+		};
+		94C8A1521F13534200BE3954 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				"DEBUG_INFORMATION_FORMAT[sdk=*]" = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 9L4QA9SNQK;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/BlueNRG-Mesh_App/ExternalLib",
+					"$(PROJECT_DIR)/BlueNRG-Mesh_App/ExternalLib/Framworks",
+					"$(PROJECT_DIR)/BlueNRG-Mesh_App/ExternalLib/JsonValidator",
+					"$(PROJECT_DIR)/BlueNRG-Mesh_App/ExternalLib/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "${PROJECT_DIR}/include";
+				INFOPLIST_FILE = "$(SRCROOT)/BlueNRG-Mesh_App/SupportingFiles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BlueNRG-Mesh_App/ExternalLib/libBlueNRG/lib",
+					"$(PROJECT_DIR)/BlueNRG-Mesh_App/ExternalLib/libBlueNRG",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					$inherited,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "BlueNRG-Mesh_App/CommonClasses/BlueNRG-Mesh App-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				SYSTEM_HEADER_SEARCH_PATHS = "$(SRCROOT)/library/";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Debug;
+		};
+		94C8A1531F13534200BE3954 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9L4QA9SNQK;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/BlueNRG-Mesh_App/ExternalLib",
+					"$(PROJECT_DIR)/BlueNRG-Mesh_App/ExternalLib/Framworks",
+					"$(PROJECT_DIR)/BlueNRG-Mesh_App/ExternalLib/JsonValidator",
+					"$(PROJECT_DIR)/BlueNRG-Mesh_App/ExternalLib/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "${PROJECT_DIR}/include";
+				INFOPLIST_FILE = "$(SRCROOT)/BlueNRG-Mesh_App/SupportingFiles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BlueNRG-Mesh_App/ExternalLib/libBlueNRG/lib",
+					"$(PROJECT_DIR)/BlueNRG-Mesh_App/ExternalLib/libBlueNRG",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					$inherited,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "BlueNRG-Mesh_App/CommonClasses/BlueNRG-Mesh App-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				SYSTEM_HEADER_SEARCH_PATHS = "$(SRCROOT)/library/";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		94C8A13A1F13534200BE3954 /* Build configuration list for PBXProject "BlueNRG-Mesh App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94C8A14F1F13534200BE3954 /* Debug */,
+				94C8A1501F13534200BE3954 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94C8A1511F13534200BE3954 /* Build configuration list for PBXNativeTarget "BlueNRG-Mesh App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94C8A1521F13534200BE3954 /* Debug */,
+				94C8A1531F13534200BE3954 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 94C8A1371F13534200BE3954 /* Project object */;
+}

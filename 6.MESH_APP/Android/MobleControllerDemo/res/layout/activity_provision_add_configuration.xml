@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_gray_light">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ST_primary_blue"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"></android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:id="@+id/mainSV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:nestedScrollingEnabled="true"
+        android:padding="10dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/mainLL"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/subscriptionCV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:id="@+id/subscriptionLL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtSubscriptionLabelTV"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/ed2"
+                            android:background="@color/Grey"
+                            android:padding="5dp"
+                            android:text="Group Subscription"
+                            android:textColor="@color/ST_BLUE_DARK"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            android:visibility="visible" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/subscriptionRV"
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:layout_marginTop="10dp"
+                            android:nestedScrollingEnabled="true"
+                            android:paddingBottom="7dp" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/publicationCV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/subscriptionCV"
+                    android:elevation="2dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:id="@+id/layPublication"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/subscriptionCV"
+                        android:layout_margin="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtPublicationLabelTV"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/subscription_group_list"
+                            android:background="@color/Grey"
+                            android:padding="5dp"
+                            android:text="Publish Target"
+                            android:textColor="@color/ST_BLUE_DARK"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            android:visibility="visible" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/publishingRV"
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:layout_marginTop="10dp"
+                            android:nestedScrollingEnabled="true"
+                            android:paddingBottom="7dp" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/addconfigBT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@color/ST_primary_blue"
+        android:text="Add Configuration"
+        android:textAllCaps="false"
+        android:textColor="@color/white1" />
+
+</RelativeLayout>

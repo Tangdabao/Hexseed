@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/Unprovisioned"
+        android:icon="@drawable/unprovimod"
+        android:title="Devices" />
+
+
+    <item
+        android:id="@+id/Provisioned"
+
+        android:icon="@drawable/provimod"
+        android:title="Nodes" />
+
+    <item
+        android:id="@+id/Group"
+
+        android:icon="@drawable/relay_home_automation_filled"
+        android:title="Groups" />
+
+
+</menu>

@@ -1,0 +1,1611 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000         #line   1                "..\\..\\Src\\data.s"
+    1 00000000         
+    2 00000000         
+    3 00000000         
+    4 00000000         
+    5 00000000         
+    6 00000000         
+    7 00000000         
+    8 00000000         
+    9 00000000         
+   10 00000000         
+   11 00000000         
+   12 00000000         
+   13 00000000         
+   14 00000000         
+   15 00000000         
+   16 00000000         
+   17 00000000         
+   18 00000000         
+   19 00000000         
+   20 00000000         
+   21 00000000         
+   22 00000000         
+   23 00000000         
+   24 00000000         
+   25 00000000         
+   26 00000000         
+   27 00000000         
+   28 00000000         
+   29 00000000         
+   30 00000000         
+   31 00000000         
+   32 00000000         
+   33 00000000         
+   34 00000000         
+   35 00000000         
+   36 00000000         
+   37 00000000         
+   38 00000000         
+   39 00000000         
+   40 00000000         
+   41 00000000 10065000 
+                       _bdaddr EQU              0x10065000
+   42 00000000                 EXPORT           _bdaddr
+   43 00000000         
+   44 00000000                 AREA             CONFIG, READONLY
+   45 00000000 10066000 
+                       _mobleNvmBase_data
+                               EQU              0x10066000
+   46 00000000                 EXPORT           _mobleNvmBase_data
+   47 00000000 FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+
+
+
+ARM Macro Assembler    Page 2 
+
+
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+
+
+
+ARM Macro Assembler    Page 3 
+
+
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+
+
+
+ARM Macro Assembler    Page 4 
+
+
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+
+
+
+ARM Macro Assembler    Page 5 
+
+
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+
+
+
+ARM Macro Assembler    Page 6 
+
+
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+
+
+
+ARM Macro Assembler    Page 7 
+
+
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+
+
+
+ARM Macro Assembler    Page 8 
+
+
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+
+
+
+ARM Macro Assembler    Page 9 
+
+
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+
+
+
+ARM Macro Assembler    Page 10 
+
+
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+
+
+
+ARM Macro Assembler    Page 11 
+
+
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+
+
+
+ARM Macro Assembler    Page 12 
+
+
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+
+
+
+ARM Macro Assembler    Page 13 
+
+
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+
+
+
+ARM Macro Assembler    Page 14 
+
+
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+
+
+
+ARM Macro Assembler    Page 15 
+
+
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+
+
+
+ARM Macro Assembler    Page 16 
+
+
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+
+
+
+ARM Macro Assembler    Page 17 
+
+
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+
+
+
+ARM Macro Assembler    Page 18 
+
+
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+
+
+
+ARM Macro Assembler    Page 19 
+
+
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+
+
+
+ARM Macro Assembler    Page 20 
+
+
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+
+
+
+ARM Macro Assembler    Page 21 
+
+
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+
+
+
+ARM Macro Assembler    Page 22 
+
+
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+
+
+
+ARM Macro Assembler    Page 23 
+
+
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+
+
+
+ARM Macro Assembler    Page 24 
+
+
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF FF FF 
+              FF               FILL             4096, 0xFF
+
+
+
+ARM Macro Assembler    Page 25 
+
+
+   48 00001000         
+   49 00001000                 END
+Command Line: --debug --xref --cpreproc --diag_suppress=9931 --cpu=Cortex-M0 --
+apcs=interwork --depend=.\objects\data.d -o.\objects\data.o -I.\RTE\_Lighting -
+ID:\Software\Keil_V5\ARM\CMSIS\Include --predefine="__MICROLIB SETA 1" --predef
+ine="__UVISION_VERSION SETA 523" --list=.\listings\data.lst ..\..\Src\data.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+CONFIG 00000000
+
+Symbol: CONFIG
+   Definitions
+      At line 44 in file ..\\..\\Src\\data.s
+   Uses
+      None
+Comment: CONFIG unused
+1 symbol
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Absolute symbols
+
+_bdaddr 10065000
+
+Symbol: _bdaddr
+   Definitions
+      At line 41 in file ..\\..\\Src\\data.s
+   Uses
+      At line 42 in file ..\\..\\Src\\data.s
+Comment: _bdaddr used once
+_mobleNvmBase_data 10066000
+
+Symbol: _mobleNvmBase_data
+   Definitions
+      At line 45 in file ..\\..\\Src\\data.s
+   Uses
+      At line 46 in file ..\\..\\Src\\data.s
+Comment: _mobleNvmBase_data used once
+2 symbols
+335 symbols in table

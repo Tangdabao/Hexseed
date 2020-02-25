@@ -1,0 +1,17 @@
+.\objects\pal_nvm.o: ..\..\..\..\..\..\Middlewares\ST\ST_BLE_Mesh\PAL\BlueNRG1_2\pal_nvm.c
+.\objects\pal_nvm.o: ..\..\..\..\..\..\Middlewares\ST\ST_BLE_Mesh\Inc\types.h
+.\objects\pal_nvm.o: ..\..\..\..\..\..\Middlewares\ST\ST_BLE_Mesh\Inc\pal_nvm.h
+.\objects\pal_nvm.o: ..\..\..\..\..\..\Middlewares\ST\ST_BLE_Mesh\Inc\pal_if.h
+.\objects\pal_nvm.o: D:\Software\Keil_V5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\pal_nvm.o: ..\..\..\..\..\..\Drivers\BlueNRG1_Periph_Driver\inc\BlueNRG1_flash.h
+.\objects\pal_nvm.o: ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\BlueNRG1\Include\BlueNRG_x_device.h
+.\objects\pal_nvm.o: ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\BlueNRG1\Include\BlueNRG1.h
+.\objects\pal_nvm.o: ..\..\..\..\..\..\Drivers\CMSIS\Include\core_cm0.h
+.\objects\pal_nvm.o: D:\Software\Keil_V5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\pal_nvm.o: ..\..\..\..\..\..\Drivers\CMSIS\Include\core_cmInstr.h
+.\objects\pal_nvm.o: ..\..\..\..\..\..\Drivers\CMSIS\Include\core_cmFunc.h
+.\objects\pal_nvm.o: ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\BlueNRG1\Include\system_BlueNRG1.h
+.\objects\pal_nvm.o: ..\..\..\..\..\..\Middlewares\ST\BlueNRG1\hal\inc\compiler.h
+.\objects\pal_nvm.o: ..\..\..\..\..\..\Middlewares\ST\BlueNRG1\hal\inc\hal_types.h
+.\objects\pal_nvm.o: ..\..\..\..\..\..\Drivers\CMSIS\Include\core_cm0.h
+.\objects\pal_nvm.o: ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\BlueNRG1\Include\system_bluenrg.h

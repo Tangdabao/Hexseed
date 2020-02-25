@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/action_App_Setting"
+            android:textColor="@color/ST_BLUE_DARK"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:text="Network Name"
+            android:textColor="@color/ST_BLUE_DARK"
+            android:textSize="15dp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/lytInputedtNetworkName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp">
+
+            <EditText
+                android:id="@+id/network_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_group_setting_background"
+                android:drawableRight="@drawable/ic_edit_black_24dp"
+                android:padding="10dp"
+                android:textSize="15sp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:text="Provisioner Name"
+            android:textColor="@color/ST_BLUE_DARK"
+            android:textSize="15dp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/lytInputedtProvisionerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp">
+
+            <EditText
+                android:id="@+id/provisioner_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_group_setting_background"
+                android:drawableRight="@drawable/ic_edit_black_24dp"
+                android:padding="10dp"
+                android:textSize="15sp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/butChangeName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Submit" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:text="Show User Helper Guide"
+                android:textColor="@color/ST_BLUE_DARK"
+                android:textSize="15dp" />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

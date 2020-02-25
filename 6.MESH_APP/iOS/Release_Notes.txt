@@ -1,0 +1,71 @@
+BlueNRG-Mesh iOS SDK Version 1.03.010 : 15th November 2018
+============================================================================================
+1.Sensor Model Support
+2.Lighting HSL Model Support
+3.Application Logger added.
+4.Support for mesh devices implementing BLE privacy.
+5.Fix transport layer Ack problem.
+
+Developer Notes : 
+Version 1.03.000 SDK will become obselete on 30th March 2019. 
+
+Known Issues: 
+We have observed issue in stability of BLE connection with iOS 12.0.1 on iPhone6 and 6s.
+
+
+BlueNRG-Mesh iOS SDK Version 1.02.000 : 8th August 2018
+============================================================================================
+1.	Cloud Synchronization Support
+2.	Lighting Model Support
+3.	Health Model Support
+4.	Node feature control
+
+    
+Developer Notes : 
+1.	Development platform: XCode 9.3
+2.	Supported OS: iOS 10+
+3.	Supported Devices: iPhone 5s onward, Recommended iPhone 6s and newer.
+
+# This release supports synchronization of mesh configuration database via e-mail and cloud.
+You need to provide your server URL in the source file "CloudOperationConstantFile.swift".
+You can also evaluate this functionality using our App available on App store.
+
+
+BlueNRG-Mesh iOS SDK Version 1.01.900 : 15th June 2018
+============================================================================================
+1.	UI Unification in line with BlueNRG-Mesh Android App
+2.	Mesh Model support in App
+3.	Frequent used App settings moved to Side Menu
+4.	Node feature and Model support information added
+
+
+Developer Notes : 
+1.	Development platform: XCode 9.3
+2.	Supported OS: iOS 10+
+3.	Supported Devices: iPhone 5s onward, Recommended iPhone 6s and newer.
+
+
+
+BlueNRG-Mesh iOS SDK version 1.01.000 : 10th April 2018
+============================================================================================
+1.Provisioning Database sharing between smart phones using JSON format
+1.Multi-Element Support Added
+3.GenericOnOff & GenericLevel support added
+4.Switched to new Vendor Model Opcodes
+5.Node un-provisioning using Config Model added, un-provision using Vendor model removed
+7.Selection between Generic and Vendor Model in the sample App
+8. Crash analytics integration removed from sample App
+
+Known Limitations
+1. Configuration of node after provisioning may not get completed for mesh devices employing Private Random Addresses.
+
+
+BlueNRG-Mesh iOS SDK version 1.00.000 : 15th February 2018
+============================================================================================
+1.Support for proxy connection using node identity
+2.Mesh Profile 1.0 based provisioning
+3.Support provisioner database storage
+4.Integrated Crash analytics (Frabic.io)
+
+Known Limitations
+1. Up to 8 byte payload supported in application layer.

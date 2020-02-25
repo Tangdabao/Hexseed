@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_gray_light"
+    android:theme="@style/AppTheme">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:nestedScrollingEnabled="true"
+        android:padding="10dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/layoutlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvSeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Group Control"
+                        android:textColor="@color/ST_primary_blue"
+                        android:textStyle="bold"
+                        android:textSize="15sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <SeekBar
+                            android:id="@+id/seekBar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:max="100"
+                            android:theme="@style/TextLabelNew" />
+
+                        <TextView
+                            android:id="@+id/txtIntensityValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="20dp"
+                            android:text="0"
+                            android:textColor="@color/ST_primary_blue"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Group Detail"
+                        android:textColor="@color/ST_primary_blue"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="15sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:background="@drawable/round_group_setting_background"
+                        android:orientation="horizontal">
+
+
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.5"
+                            android:paddingLeft="5dp"
+                            android:text="Group Name"
+                            android:textColor="@color/Black" />
+
+                        <EditText
+                            android:id="@+id/edtName"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:textSize="13sp"
+                            android:paddingRight="10dp"
+
+                            android:paddingLeft="10dp"
+                            android:paddingTop="6dp"
+                            android:imeOptions="actionDone"
+                            android:imeActionLabel="Done"
+                            android:paddingBottom="6dp"
+                            android:drawableEnd="@drawable/ic_edit_black_24dp"
+                            android:background="@android:color/transparent"
+                            android:layout_marginLeft="10dp"
+                            android:theme="@style/AppTheme"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lytName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:visibility="gone"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/str_element_label"
+                            android:textColor="@color/ST_primary_blue"/>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/rounded_corner_stroke_blue"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/edtElementName"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+                                android:textSize="13sp"
+                                android:hint="Editable"
+                                android:paddingRight="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="6dp"
+                                android:layout_marginBottom="6dp"
+                                android:background="@color/sharpwhite"
+                                android:theme="@style/AppTheme"/>
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="20dp"
+                                android:layout_weight="0.5"
+                                android:layout_marginRight="2dp"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/ic_edit_black_24dp"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lytAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/round_group_setting_background"
+                        android:layout_marginTop="5dp"
+                        android:padding="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.5"
+                            android:text="Group Address"
+                            android:textColor="@color/Black"/>
+
+                        <EditText
+                            android:id="@+id/edtAddress"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3.0"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="13sp"
+                            android:paddingRight="10dp"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="6dp"
+                            android:paddingBottom="6dp"
+                            android:background="@android:color/transparent"
+                            android:theme="@style/AppTheme" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Members"
+                android:textColor="@color/ST_primary_blue"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="15sp" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/subscriptionCardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:id="@+id/laySubscription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtSubscriptionLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/ed2"
+                            android:text="Subscribers:"
+                            android:textStyle="bold"
+                            android:textColor="@color/ST_primary_blue"
+                            android:textSize="13sp"
+                            android:visibility="visible" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/subscriptionRecycler"
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:layout_marginTop="10dp"
+                            android:nestedScrollingEnabled="true"
+                            android:paddingBottom="7dp" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/publicationCardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/subscriptionCardView"
+                    android:elevation="2dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:id="@+id/layPublication"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/subscriptionCardView"
+                        android:layout_margin="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtPublicationLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/subscription_group_list"
+                            android:text="Publishers:"
+                            android:textColor="@color/ST_primary_blue"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            android:visibility="visible" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/publishingRecycler"
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:layout_marginTop="10dp"
+                            android:nestedScrollingEnabled="true"
+                            android:paddingBottom="7dp" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/modelCardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/publicationCardView"
+                    android:elevation="2dp"
+                    android:visibility="gone"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:id="@+id/layModel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/subscriptionCardView"
+                        android:layout_margin="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtModelLabel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/subscription_group_list"
+                            android:text="Models"
+                            android:textColor="@color/ST_primary_blue"
+                            android:textSize="13sp"
+                            android:visibility="visible" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/modelRecycler"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:nestedScrollingEnabled="true" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/txtMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="No node is configured."
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/butRemoveNode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_gray_light4"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Remove Node"
+        android:textAllCaps="false"
+        android:textColor="@color/Red"
+        android:hint="Remove Group" />
+
+</RelativeLayout>

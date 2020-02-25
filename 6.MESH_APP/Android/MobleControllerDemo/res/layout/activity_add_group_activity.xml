@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?><!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"--><!--xmlns:tools="http://schemas.android.com/tools"--><!--android:layout_width="fill_parent"--><!--android:layout_height="fill_parent"--><!--&gt;-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:scrollbars="none">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:scrollbars="none"
+        tools:context="com.st.bluenrgmesh.AddGroup">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/layoutlist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/ed1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/etxt_groupName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Name"
+                        android:textSize="16sp" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/ed2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ed1"
+                    android:layout_marginTop="7dp">
+
+                    <EditText
+                        android:id="@+id/etxt_groupAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Group Address"
+                        android:textSize="16sp" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtSubscription"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/ed2"
+                            android:text="Subscription List"
+                            android:textColor="@color/ST_primary_blue"
+                            android:textSize="13sp"
+                            android:visibility="gone" />
+
+                        <RelativeLayout
+                            android:id="@+id/b"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ListView
+                                android:id="@+id/subscription_group_list"
+                                android:layout_width="match_parent"
+                                android:layout_height="160dp"
+                                android:nestedScrollingEnabled="true"
+                                android:layout_marginTop="4dp" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/txtSetPub"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/subscription_group_list"
+                            android:text="Set Publish Address"
+                            android:textColor="@color/ST_primary_blue"
+                            android:textSize="13sp"
+                            android:visibility="visible" />
+
+                        <RelativeLayout
+                            android:id="@+id/c"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ListView
+                                android:id="@+id/publishing_group_list"
+                                android:layout_width="match_parent"
+                                android:layout_height="160dp"
+                                android:nestedScrollingEnabled="true"
+                                android:layout_marginTop="10dp" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <ListView
+                            android:id="@+id/group_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp"
+                            android:nestedScrollingEnabled="true"
+                            android:layout_marginTop="10dp" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/txtMsg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="No node is configured."
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/imageButtonDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:backgroundTint="@color/ST_primary_blue"
+        android:text="Remove Node" />
+
+</RelativeLayout>

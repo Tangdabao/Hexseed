@@ -1,0 +1,142 @@
+/***************************************************************************************************
+ *
+ *       Copyright 2015 Motorola Solutions, Inc. All rights reserved.
+ *
+ *       The copyright notice above does not evidence any
+ *       actual or intended publication of such source code.
+ *       The code contains Motorola Confidential Proprietary Information.
+ *
+ *
+ ***************************************************************************************************/
+buildscript {
+    repositories {
+        jcenter() {
+            url "http://jcenter.bintray.com/"
+        }
+        maven { url 'https://maven.fabric.io/public' }
+        maven {
+            url 'http://maven.google.com/'
+            name 'Google'
+        }
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.2.2'
+        classpath 'io.fabric.tools:gradle:1.+'
+
+    }
+}
+
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+
+allprojects {
+    repositories {
+        jcenter() {
+            url "http://jcenter.bintray.com/"
+        }
+        maven {
+            url 'http://maven.google.com/'
+            name 'Google'
+        }
+        maven { url 'https://maven.fabric.io/public' }
+
+    }
+}
+android {
+    compileSdkVersion 26
+    buildToolsVersion '28.0.3'
+    archivesBaseName = "BlueNRG-Mesh"
+    defaultConfig {
+
+        applicationId "com.st.bluenrgmesh"
+        minSdkVersion 23
+        targetSdkVersion 26
+        versionCode 110
+        versionName "1.08.003"
+        /*signingConfig signingConfigs.release*/
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            resources.srcDirs = ['src']
+            aidl.srcDirs = ['src']
+            renderscript.srcDirs = ['src']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+        }
+    }
+    signingConfigs {
+        release {
+            storeFile file("keys/moble.jks")
+            storePassword "stmicro"
+            keyAlias "Key0"
+            keyPassword "stmicro"
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+
+        releaseUnsigned.initWith(buildTypes.release)
+        releaseUnsigned {
+            signingConfig null
+        }
+
+    }
+    task ccClean(type: Delete, description: 'ClearCase cleanup') {
+        def tree = fileTree(dir: ".")
+        tree.include '**/*.contrib*'
+        tree.include '**/*.keep*'
+        tree.include '**/*.bak*'
+        tree.include '**/*.unloaded*'
+        tree.include 'src/**/*'
+        tree.exclude 'src/**/*.java'
+        delete tree;
+    }
+    lintOptions {
+        abortOnError false
+    }
+    ccClean.dependsOn 'clean'
+    productFlavors {
+    }
+
+}
+
+repositories {
+    flatDir {
+        dirs '../MobleLibrary/build/outputs/aar/'
+    }
+    maven {
+        url 'http://maven.google.com/'
+        name 'Google'
+    }
+    maven { url 'https://maven.fabric.io/public' }
+    jcenter() {
+        url "http://jcenter.bintray.com/"
+    }
+}
+
+dependencies {
+    compile(name: 'MobleLibrary-release', ext: 'aar')
+    compile 'com.android.support:support-v4:26.0.2'
+    compile 'com.android.support:design:26.0.2'
+    compile 'com.android.support:appcompat-v7:26.0.2'
+    compile 'com.android.support:recyclerview-v7:26.0.2'
+    compile 'com.android.support:support-vector-drawable:26.0.2'
+    compile 'com.android.support:cardview-v7:26.0.2'
+    compile 'com.google.code.gson:gson:2.8.3'
+    compile 'com.mcxiaoke.volley:library:1.0.19'
+    compile 'pl.bclogic:pulsator4droid:1.0.3'
+    compile 'de.hdodenhof:circleimageview:1.2.1'
+    compile('com.crashlytics.sdk.android:crashlytics:2.9.0@aar') {
+        transitive = true;
+    }
+    /*compile 'uk.co.samuelwall:material-tap-target-prompt:2.7.0'*/
+}

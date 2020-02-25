@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/color_app_background"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pagerr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="ifContentScrolls"
+        android:alwaysDrawnWithCache="true"
+        android:splitMotionEvents="true"
+        android:persistentDrawingCache="animation"
+        android:drawingCacheQuality="auto"
+        android:animateLayoutChanges="true"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:elevation="10dp"
+        android:outlineProvider="bounds"
+        android:layout_marginTop="-5dp">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_layoutt"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/ST_primary_blue"
+            app:tabIndicatorColor="@color/sharpwhite"
+            app:tabIndicatorHeight="4dp"
+            android:layout_alignParentBottom="true"/>
+
+    </FrameLayout>
+
+
+
+
+</RelativeLayout>

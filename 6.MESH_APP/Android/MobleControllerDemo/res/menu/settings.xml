@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/***************************************************************************************************
+ *
+ *       Copyright 2015 Motorola Solutions, Inc. All rights reserved.
+ *
+ *       The copyright notice above does not evidence any
+ *       actual or intended publication of such source code.
+ *       The code contains Motorola Confidential Proprietary Information.
+ *
+ *
+ ***************************************************************************************************/
+-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.st.bluenrgmesh.ControlActivity">
+    <item android:id="@+id/settingsAction"
+            android:title="SETTINGS"
+            android:showAsAction="always" />
+    
+
+</menu>

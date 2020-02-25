@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/ST_primary_blue"
+            android:visibility="gone"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        <RelativeLayout
+            android:id="@+id/lytTopBar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/ST_primary_blue"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/imgActionBarDrawerIcon"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_menu_black_24dp" />
+
+            <ImageView
+                android:id="@+id/imgActionBarAppLogoLarge"
+                android:layout_width="35dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/imgActionBarDrawerIcon"
+                android:adjustViewBounds="true"
+                android:src="@drawable/stlogo"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txtActionBarAppFeatureName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3dp"
+                android:adjustViewBounds="true"
+                android:text="@string/app_name"
+                android:textColor="@color/sharpwhite"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/lytActionBarHelp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgActionBarAddGroup"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toRightOf="@id/imgActionBarDrawerIcon"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/add_group_plus"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/imgActionModel"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toRightOf="@id/imgActionBarDrawerIcon"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/category"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/txtSave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SAVE"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/white1"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    android:visibility="visible"/>
+
+                <ImageView
+                    android:id="@+id/imgActionRefresh"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toRightOf="@id/txtSave"
+                    android:adjustViewBounds="true"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_main" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="70dp"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/ic_add_black_24dp"
+        android:theme="@style/Widget.Design.FloatingActionButton"
+        android:visibility="gone" />
+
+</android.support.design.widget.CoordinatorLayout>
+

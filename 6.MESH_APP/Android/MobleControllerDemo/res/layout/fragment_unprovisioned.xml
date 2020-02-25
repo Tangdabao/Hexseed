@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <pl.bclogic.pulsator4droid.library.PulsatorLayout
+        android:id="@+id/pulsator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:pulse_count="2"
+        app:pulse_duration="4000"
+        app:pulse_repeat="8"
+        app:pulse_color="@color/bluelight"
+        app:pulse_startFromScratch="true"
+        app:pulse_interpolator="Accelerate"
+        android:gravity="bottom">
+    </pl.bclogic.pulsator4droid.library.PulsatorLayout>
+
+    <TextView
+        android:id="@+id/add_devicesTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="@string/str_adddevice_label"
+        android:textColor="@color/Dark_grey"
+        android:textSize="12sp"
+        android:textStyle="bold"/>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swiperefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/add_devicesTV"
+        android:layout_marginBottom="55dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/layRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/lytWarningDeviceDiscovery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="40dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/Grey"
+            android:text="@string/str_warnin_msg_device_you_wish_to_provision_label" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

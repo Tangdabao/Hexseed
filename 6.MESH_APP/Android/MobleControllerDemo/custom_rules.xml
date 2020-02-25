@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+	<property environment="env"/>
+    <import file="../MobleCommon/custom_rules.xml" optional="false"/>
+    
+    <target name="ccClean">
+        <delete quiet="true">
+            <fileset dir="./build" includes="**/*"/>
+
+            <fileset dir="./bin" includes="**/*"/>
+
+            <fileset dir="./doc" includes="**/*"/>
+
+            <fileset dir="./gen" includes="**/*"/>
+
+            <fileset dir="." includes="**/*.keep*"/>
+            <fileset dir="." includes="**/*.contrib*"/>
+            <fileset dir="." includes="**/*.bak*"/>
+
+            <fileset dir="." includes="**/*.unloaded*"/>
+            <dirset dir="." includes="**/*.unloaded*"/>
+
+            <fileset dir="./src" excludes="**/*.java"/>
+        </delete>
+    </target>
+    
+    <target name="check-android-prepared">
+	    <available file="build.xml" property="build.present"/>
+	</target>
+    
+    <property name="platform" value="22"/>
+
+    <target name="runAndroid" depends="check-android-prepared" unless="build.present">
+ 		<fail unless="env.ANDROID_SDK" message="Environment variable ANDROID_SDK is not set."/>
+   		<exec executable="cmd">
+   		    <arg value="/c"/>
+		    <arg value="&quot;${env.ANDROID_SDK}/tools/android.bat&quot; update project --target android-${platform} --library ../MobleLibrary --path ." />
+		</exec>
+    </target>
+       
+    <property name="android" value="${env.ANDROID_SDK}/platforms/android-${platform}/android.jar"/>
+    
+    <target name="old_proguard">
+        <mkdir dir="bin/classes_out"/>
+        <java jar="${env.PROGUARD_HOME}/lib/proguard.jar" fork="true" failonerror="true">
+            <arg value="@proguard-project.txt"/>
+            <arg value="-injars ./bin/classes"/>
+            <arg value="-outjars ./bin/classes_out"/>
+            <arg value="-libraryjars ${android}"/>
+            <arg value="-libraryjars ../MobleLibrary/bin/MobleLibrary.jar"/>
+        </java>
+        <delete quiet="true" dir="./bin/classes"/>
+        <move file="./bin/classes_out" tofile="./bin/classes"/>
+    </target>
+</project>

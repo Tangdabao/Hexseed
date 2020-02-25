@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="value_request_timeout">1800000</integer><!-- in milliseconds -->
+    <!--<integer name="max_level_value">65535</integer>&lt;!&ndash; in milliseconds &ndash;&gt;-->
+    <integer name="SENSOR_MODEL_TEMP_PROPERTYID">79</integer>
+    <integer name="SENSOR_MODEL_PRESSURE_PROPERTYID">10861</integer>
+
+</resources>

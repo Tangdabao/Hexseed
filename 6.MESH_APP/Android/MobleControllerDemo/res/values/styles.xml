@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/ST_primary_blue</item>
+        <item name="colorPrimaryDark">@color/ST_primary_blue</item>
+        <item name="colorAccent">@color/ST_primary_blue</item>
+    </style>
+
+    <style name="SlideAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_down</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="SCBSwitch" parent="Theme.AppCompat.Light">
+        <!-- active thumb & track color (30% transparency) -->
+        <item name="colorControlActivated">@color/lightgreen3</item>
+
+        <!-- inactive thumb color -->
+        <item name="colorSwitchThumbNormal">@color/HVAC_BAR_MAX</item>
+
+        <!-- inactive track color (30% transparency) -->
+        <item name="android:colorForeground">@color/HVAC_BAR_MAX</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="TextLabela" parent="TextAppearance.Design.Hint">
+        <item name="android:textSize">13sp</item>
+    </style>
+    <style name="TextLabel" parent="TextAppearance.AppCompat">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">@color/ST_primary_blue</item>
+        <item name="android:textSize">18sp</item>
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorAccent">@color/ST_primary_blue</item>
+        <item name="colorControlNormal">@color/ST_primary_blue</item>
+        <item name="colorControlActivated">@color/ST_primary_blue</item>
+    </style>
+
+    <style name="TextLabelNew" parent="TextAppearance.AppCompat">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">@color/HVAC_BAR_MIN</item>
+        <item name="android:textSize">18sp</item>
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorAccent">@color/HVAC_BAR_MIN</item>
+        <item name="colorControlNormal">@color/HVAC_BAR_MIN</item>
+        <item name="colorControlActivated">@color/HVAC_BAR_MIN</item>
+    </style>
+
+    <style name="TextLabe" parent="TextAppearance.AppCompat">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:textSize">18sp</item>
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorAccent">@color/white</item>
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorControlActivated">@color/white</item>
+    </style>
+
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="Theme.AppCompat.Light.DarkActionBa" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="colorPrimary">@color/ST_primary_blue</item>
+        <item name="colorPrimaryDark">@color/ST_BLUE_DARK</item>
+        <!--<item name="android:actionBarStyle">@style/Widget.ActionBar.Resized</item>
+        <item name="android:actionMenuTextAppearance">@style/Widget.ActionBar.MenuTextStyle</item>-->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme1" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:actionBarStyle">@style/Widget.ActionBar.Resized</item>
+        <item name="android:actionMenuTextAppearance">@style/Widget.ActionBar.MenuTextStyle</item>
+    </style>
+
+    <style name="Widget.ActionBar" parent="@android:style/Widget.ActionBar">
+    </style>
+
+    <style name="Widget.ActionBar.Resized">
+        <item name="android:titleTextStyle">@style/Widget.ActionBar.TitleTextStyle</item>
+        <item name="android:background">#222222</item>
+    </style>
+
+    <style name="Widget.ActionBar.TitleTextStyle" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="Widget.ActionBar.MenuTextStyle" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="ProgressDialogTheme" parent="android:Theme.Holo.Dialog">
+        <item name="android:alertDialogStyle">@style/CustomProgressDialogStyle</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+
+    <style name="CustomProgressDialogStyle">
+        <item name="android:bottomBright">@color/transparent</item>
+        <item name="android:bottomDark">@color/transparent</item>
+        <item name="android:bottomMedium">@color/transparent</item>
+        <item name="android:centerBright">@color/transparent</item>
+        <item name="android:centerDark">@color/transparent</item>
+        <item name="android:centerMedium">@color/transparent</item>
+        <item name="android:fullBright">@color/transparent</item>
+        <item name="android:fullDark">@color/transparent</item>
+        <item name="android:topBright">@color/transparent</item>
+        <item name="android:topDark">@color/transparent</item>
+    </style>
+    <style name="Activitytheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/ST_primary_blue</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+</resources>

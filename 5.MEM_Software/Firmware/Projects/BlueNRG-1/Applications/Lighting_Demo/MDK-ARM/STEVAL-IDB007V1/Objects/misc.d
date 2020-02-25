@@ -1,0 +1,13 @@
+.\objects\misc.o: ..\..\..\..\..\..\Drivers\BlueNRG1_Periph_Driver\src\misc.c
+.\objects\misc.o: ..\..\..\..\..\..\Drivers\BlueNRG1_Periph_Driver\inc\misc.h
+.\objects\misc.o: ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\BlueNRG1\Include\BlueNRG_x_device.h
+.\objects\misc.o: ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\BlueNRG1\Include\BlueNRG1.h
+.\objects\misc.o: ..\..\..\..\..\..\Drivers\CMSIS\Include\core_cm0.h
+.\objects\misc.o: D:\Software\Keil_V5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\misc.o: ..\..\..\..\..\..\Drivers\CMSIS\Include\core_cmInstr.h
+.\objects\misc.o: ..\..\..\..\..\..\Drivers\CMSIS\Include\core_cmFunc.h
+.\objects\misc.o: ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\BlueNRG1\Include\system_BlueNRG1.h
+.\objects\misc.o: ..\..\..\..\..\..\Middlewares\ST\BlueNRG1\hal\inc\compiler.h
+.\objects\misc.o: ..\..\..\..\..\..\Middlewares\ST\BlueNRG1\hal\inc\hal_types.h
+.\objects\misc.o: ..\..\..\..\..\..\Drivers\CMSIS\Include\core_cm0.h
+.\objects\misc.o: ..\..\..\..\..\..\Drivers\CMSIS\Device\ST\BlueNRG1\Include\system_bluenrg.h

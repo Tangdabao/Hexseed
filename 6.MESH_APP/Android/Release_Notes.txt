@@ -1,0 +1,122 @@
+BlueNRG-Mesh Android SDK Version 1.08.003 : 16th November 2018
+============================================================================================
+1.Bug Fixing
+2.Fix for Device Composition Block ACK for Multielements.
+3.Minor GUI Changes
+4.Support for Logger in the App.
+
+Known Issues :
+1.Keep the Application Gradle version as 2.14.1 and Android Plugin version(2.2.2) with the latest Android Studio
+
+Developer Notes : 
+1.While building the Application, please remove the ndk path from the "local.properties" which gets appended whenever the gradle syncs.
+
+You need to provide your server URL in the source file "strings.xml"in the variable URL_BASE and make bool_isCloudFunctionality to True in res\values\bools.xml .
+You can also evaluate this functionality using our App available on Google Play store.
+
+
+
+BlueNRG-Mesh Android SDK Version 1.08.000 : 26th October 2018
+============================================================================================
+1.Sensor Model Support
+2.Lighting HSL Model Support
+3.Health Model Support
+4.Application Logger added in the Navigation Bar.
+
+
+Known Issues :
+1.Keep the Application Gradle version as 2.14.1 and Android Plugin version(2.2.2) with the latest Android Studio
+
+Developer Notes : 
+1.While building the Application, please remove the ndk path from the "local.properties" which gets appended whenever the gradle syncs.
+
+You need to provide your server URL in the source file "strings.xml"in the variable URL_BASE and make bool_isCloudFunctionality to True in res\values\bools.xml .
+You can also evaluate this functionality using our App available on Google Play store.
+
+
+List of Smartphones tested : 
+
+
+Brand		                Model		Android Version
+
+Samsung Galaxy S5		SM-G900H	6.0.1
+Samsung Galaxy A5		SM-A500FU	6.0.1
+Samsung Galaxy J7 Next		SM-J701F/DS	7.0.0
+Samsung Galaxy J6 		SM-J600G	7.0.1
+MOTOROLA			MOTO G5S PLUS	7.1.1
+MOTOROLA			MOTO G5 PLUS	7.0.0
+GOOGLE PIXEL			Pixel		8.1.0
+Oppo F5youth			CPH1725		7.1.1
+Honor 9N			LLD_AL20	8.0.0
+Vivo Y81			vivo 1803	8.1.0
+Lenovo P1 			P1a42		6.0.1
+Redmi Note 5 Pro 		MEI7S		7.0.0
+Nokia 6.1 Plus  		TA1083		8.0.0
+
+
+BlueNRG-Mesh Android SDK Version 1.07.000 : 8th August 2018
+============================================================================================
+1.	Cloud Synchronization Support
+2.	Lighting Model Support
+
+Known Issues :
+1.	After transferring the JSON Data, the devices needs to be reset once.
+2.	Device Publication to address other than default may not work at the time of provisioning. This can be changed from the Element or Group settings post provisioning.
+
+Developer Notes : 
+1.	Compatible with the Latest Android Studio, Gradle Version(4.4) and Android Plugin(3.1.2)
+2.	While building the Application, please remove the ndk path from the "local.properties" which gets appended whenever the gradle syncs.
+
+This release supports synchronization of mesh configuration database via e-mail and cloud.
+You need to provide your server URL in the source file "strings.xml"in the variable URL_BASE and make bool_isCloudFunctionality to True in res\values\bools.xml .
+You can also evaluate this functionality using our App available on Google Play store.
+
+
+BlueNRG-Mesh version 1.06.000 : 15th June 2018
+============================================================================================
+1.	GUI Unification with the current iOS Application
+2.	GUI restructured to fit in the Android Fragments Architecture
+3.	Support for Reading the Device Composition Page0 o read Model and Feature information
+4.	All the App settings moved to Navigation Bar
+5.	Generic Level/Vendor command linked to the seekbar based on the Global App settings.
+
+Known Issues :
+1.	Issues have been found in Samsung Phones A5,A7 while refreshing the unprovisioning device list.[TBD]
+
+Developer Notes : 
+Compatible with the Latest android Studio,Gradle Version(4.4) and Android Plugin(3.1.2)
+While building the Application, please remove the ndk path from the "local.properties" which gets appended whenever the gradle syncs.
+
+
+BlueNRG-Mesh version 1.05.000 : 10th April 2018
+============================================================================================
+1.Provisioning Database Transfer using JSON
+2.Multi-Element Support in the App
+3.Support for GenericOnOff Model 
+4.Updated Vendor Model Opcodes 
+5.Vendor Model Node Unprovisioning replaced by Config Model command.
+6.Support for Asynchronous Notification Reception from the Device in Android.
+7.Selection between GenericOnOff Model and Vendor Model Selection in the App
+
+Known Issues :
+1.There is an issues in JSON creation in some Android Phones.
+
+Developer Notes : 
+While building the Application, please remove the ndk path from the "local.properties" which gets appended whenever the gradle syncs.
+
+
+
+BlueNRG-Mesh version 1.04.000 : 15th February 2018
+============================================================================================
+1.Provisioning based on Mesh Profile 1.0 
+2.Subscription and publication support
+3.UUID display along with the Node MAC Address
+4.Crashlytic support integrated
+
+Known Issues :
+1. Sometimes the App may show "Connection Lost" dialogue. Please make sure that mesh nodes/devices are there in the vicinity. 
+	 If the issue persists try enabling/disabling the Bluetooth of Smartphone. 
+2. While building the Application, please remove the ndk path from the "local.properties" which gets appended whenever the gradle syncs.
+3. On some phones, Application may sometime crash while unprovisoning the device.
+4. Ensure proper Proxy settings in the build.gradle for Crashlytics to work.
+5. On Adding a group in group tab view , new group appears after swipe refresh in some phones.

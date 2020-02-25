@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/***************************************************************************************************
+ *
+ *       Copyright 2015 Motorola Solutions, Inc. All rights reserved.
+ *
+ *       The copyright notice above does not evidence any
+ *       actual or intended publication of such source code.
+ *       The code contains Motorola Confidential Proprietary Information.
+ *
+ *
+ ***************************************************************************************************/
+-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.st.test.MainActivity">
+
+    <!--<item-->
+    <!--android:id="@+id/action_demo_mode_on"-->
+    <!--android:orderInCategory="100"-->
+    <!--android:title="@string/action_demo_mode_on"-->
+    <!--app:showAsAction="never"/>-->
+
+    <!--<item-->
+    <!--android:id="@+id/action_demo_mode_off"-->
+    <!--android:orderInCategory="100"-->
+    <!--android:title="@string/action_demo_mode_off"-->
+    <!--app:showAsAction="never"/>-->
+
+
+    <item
+        android:id="@+id/num_iterations"
+        android:orderInCategory="100"
+        android:title="Iterations"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/time"
+        android:orderInCategory="100"
+        android:title="TimeOut"
+        app:showAsAction="never"/>
+
+
+
+    <!--
+        <item
+            android:id="@+id/testing"
+            android:orderInCategory="100"
+            android:title="Testing"
+            app:showAsAction="never"/>
+    -->
+
+</menu>

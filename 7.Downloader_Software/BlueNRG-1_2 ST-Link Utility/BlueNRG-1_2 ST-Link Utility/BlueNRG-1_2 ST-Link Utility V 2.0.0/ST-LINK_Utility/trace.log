@@ -1,0 +1,77 @@
+cErrLog::SetLogTraceOn
+STLinkUSBDriver.dll loaded
+ST-Link/V2 device detected
+ST-Link/V2 device detected
+Target voltage detected: 3.256242
+Driving NRST low
+Driving NRST high
+Error getting target IDCODE: if SWD, check SWD connection
+Error (4) while initializing ST-Link in SWD mode
+ST-Link/V2 device detected
+Target voltage detected: 3.256242
+Driving NRST low
+Driving NRST high
+Error getting target IDCODE: if SWD, check SWD connection
+Error (4) while initializing ST-Link in SWD mode
+ST-Link/V2 device detected
+Target voltage detected: 3.253088
+Driving NRST low
+Driving NRST high
+Error getting target IDCODE: if SWD, check SWD connection
+Error (4) while initializing ST-Link in SWD mode
+ST-Link/V2 device detected
+Target voltage detected: 3.262549
+Driving NRST low
+Driving NRST high
+Error getting target IDCODE: if SWD, check SWD connection
+Error (4) while initializing ST-Link in SWD mode
+ST-Link/V2 device detected
+ST-Link/V2 device detected
+Target voltage detected: 3.253088
+Driving NRST low
+Driving NRST high
+Error getting target IDCODE: if SWD, check SWD connection
+Error (4) while initializing ST-Link in SWD mode
+ST-Link/V2 device detected
+Target voltage detected: 3.262549
+Driving NRST low
+Driving NRST high
+Error getting target IDCODE: if SWD, check SWD connection
+Error (4) while initializing ST-Link in SWD mode
+ST-Link/V2 device detected
+Target voltage detected: 3.253088
+Driving NRST low
+Driving NRST high
+Error getting target IDCODE: if SWD, check SWD connection
+Error (4) while initializing ST-Link in SWD mode
+ST-Link/V2 device detected
+Target voltage detected: 3.256242
+Driving NRST low
+Driving NRST high
+Error getting target IDCODE: if SWD, check SWD connection
+Error (4) while initializing ST-Link in SWD mode
+ST-Link/V2 device detected
+ST-Link/V2 device detected
+Target voltage detected: 3.253088
+Driving NRST low
+Driving NRST high
+Error getting target IDCODE: if SWD, check SWD connection
+Error (4) while initializing ST-Link in SWD mode
+ST-Link/V2 device detected
+Target voltage detected: 3.256242
+Driving NRST low
+Driving NRST high
+Error getting target IDCODE: if SWD, check SWD connection
+Error (4) while initializing ST-Link in SWD mode
+ST-Link/V2 device detected
+Target voltage detected: 3.262549
+Driving NRST low
+Driving NRST high
+Error getting target IDCODE: if SWD, check SWD connection
+Error (4) while initializing ST-Link in SWD mode
+ST-Link/V2 device detected
+Target voltage detected: 3.262549
+Driving NRST low
+Driving NRST high
+Error getting target IDCODE: if SWD, check SWD connection
+Error (4) while initializing ST-Link in SWD mode
